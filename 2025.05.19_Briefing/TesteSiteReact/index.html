@@ -1,0 +1,103 @@
+import React from "react";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
+import { Phone, Mail, ShieldCheck, Truck, Home, Users } from "lucide-react";
+
+export default function IsisSegurosLandingPage() {
+  return (
+    <div className="font-sans text-gray-800">
+      {/* Header */}
+      <header className="bg-white shadow-md fixed top-0 w-full z-50">
+        <div className="max-w-7xl mx-auto flex items-center justify-between p-4">
+          <h1 className="text-xl font-bold text-blue-700">ÍSIS Seguros</h1>
+          <nav className="space-x-6 hidden md:flex">
+            <a href="#home" className="hover:text-blue-600">Início</a>
+            <a href="#about" className="hover:text-blue-600">Quem Somos</a>
+            <a href="#services" className="hover:text-blue-600">Seguros</a>
+            <a href="#assist" className="hover:text-blue-600">Assistência 24h</a>
+            <a href="#contact" className="hover:text-blue-600">Contato</a>
+          </nav>
+          <Button className="bg-blue-700 text-white hover:bg-blue-800">Simule Agora</Button>
+        </div>
+      </header>
+
+      {/* Hero Section */}
+      <section id="home" className="pt-28 bg-blue-50 py-16 text-center">
+        <h2 className="text-3xl md:text-4xl font-semibold mb-4">Proteção sob medida para você, sua empresa ou seu veículo</h2>
+        <p className="text-lg mb-6">Segurança, confiança e atendimento humanizado</p>
+        <Button className="bg-blue-700 text-white hover:bg-blue-800">Conheça nossos seguros</Button>
+      </section>
+
+      {/* Serviços */}
+      <section id="services" className="py-16 bg-white">
+        <div className="max-w-6xl mx-auto text-center">
+          <h3 className="text-2xl font-bold mb-8">Nossos Seguros</h3>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+            <Card>
+              <CardContent className="p-6 text-center">
+                <ShieldCheck className="mx-auto text-blue-700 mb-4" size={32} />
+                <h4 className="font-semibold text-lg mb-2">Seguro Automóvel</h4>
+                <p>Proteção completa para seu veículo com assistência 24h.</p>
+              </CardContent>
+            </Card>
+            <Card>
+              <CardContent className="p-6 text-center">
+                <Truck className="mx-auto text-blue-700 mb-4" size={32} />
+                <h4 className="font-semibold text-lg mb-2">Seguro Caminhão</h4>
+                <p>Especializado para transportadores, com coberturas amplas.</p>
+              </CardContent>
+            </Card>
+            <Card>
+              <CardContent className="p-6 text-center">
+                <Home className="mx-auto text-blue-700 mb-4" size={32} />
+                <h4 className="font-semibold text-lg mb-2">Seguro Empresarial</h4>
+                <p>Segurança para o seu negócio com planos flexíveis.</p>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Sobre nós */}
+      <section id="about" className="py-16 bg-gray-50">
+        <div className="max-w-5xl mx-auto text-center">
+          <h3 className="text-2xl font-bold mb-4">Quem Somos</h3>
+          <p className="text-lg">
+            Há mais de 15 anos no mercado, a ÍSIS Corretora de Seguros oferece atendimento humanizado, soluções personalizadas e parceria com as principais seguradoras do Brasil.
+          </p>
+        </div>
+      </section>
+
+      {/* Assistência */}
+      <section id="assist" className="py-16 bg-white">
+        <div className="max-w-5xl mx-auto text-center">
+          <h3 className="text-2xl font-bold mb-4">Assistência 24h</h3>
+          <p className="text-lg">Conte com suporte imediato das seguradoras parceiras em qualquer emergência.</p>
+        </div>
+      </section>
+
+      {/* Contato */}
+      <section id="contact" className="py-16 bg-blue-50">
+        <div className="max-w-5xl mx-auto text-center">
+          <h3 className="text-2xl font-bold mb-4">Fale Conosco</h3>
+          <p className="mb-6">Estamos prontos para te atender pelo WhatsApp, telefone ou e-mail.</p>
+          <div className="flex flex-col md:flex-row justify-center gap-8">
+            <div>
+              <Phone className="mx-auto mb-2 text-blue-700" />
+              <p>(41) 3045-1700</p>
+            </div>
+            <div>
+              <Mail className="mx-auto mb-2 text-blue-700" />
+              <p>contato@isisseguros.com.br</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Rodapé */}
+      <footer className="bg-blue-700 text-white text-center py-6">
+        <p>&copy; {new Date().getFullYear()} ÍSIS Seguros. Todos os direitos reservados.</p>
+      </footer>
+    </div>
+  );
+}

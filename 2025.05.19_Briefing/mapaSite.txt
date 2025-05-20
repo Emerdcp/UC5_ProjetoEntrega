@@ -1,0 +1,102 @@
+Com base na estrutura completa do seu código HTML, aqui está o **mapa do site (sitemap)** da página atual do site da **ÍSIS Seguros**, extraído diretamente dos elementos presentes no seu layout:
+
+---
+
+### 🗺️ **Mapa do Site – Atual (Baseado no HTML enviado)**
+
+#### **1. Página Inicial**
+
+* Banner de chamada com botão: “Solicite uma proposta”
+* Acesso rápido para seções internas (via menu de navegação)
+
+---
+
+#### **2. Quem Somos** (`#quemSomos`)
+
+* Descrição institucional da empresa
+* Destaques: experiência, equipe, parcerias e infraestrutura
+
+---
+
+#### **3. Produtos** (`#produtos`)
+
+Apresentação em **cards deslizantes** com modais informativos:
+
+* **Seguro Auto**
+* **Previdência**
+* **Seguro Residencial**
+* **Seguro para Condomínio**
+* **Seguros Empresariais**
+
+---
+
+#### **4. Solicite uma Proposta**
+
+* Link direto para plataforma externa: [isisseguros.aggilizador.com.br](https://isisseguros.aggilizador.com.br/)
+
+---
+
+#### **5. Assistência 24hs**
+
+* Modal com links para seguradoras parceiras:
+
+  * HDI Seguros
+  * Porto Seguro
+  * Azul Seguros
+  * Mitsui
+  * Tokio Marine
+
+---
+
+#### **6. Contato** (`#contato`)
+
+* Formulário com:
+
+  * Nome
+  * Telefone
+  * E-mail
+  * Mensagem
+* Botões: Enviar / Cancelar
+
+---
+
+#### **7. Localização** (`#localizacao`)
+
+* Endereço completo com mapa do Google integrado
+* Telefones fixos e WhatsApp
+* E-mail
+* Botão para abrir WhatsApp diretamente
+
+---
+
+#### **8. Redes Sociais (Rodapé)**
+
+* **Facebook**
+* **Instagram**
+
+---
+
+### ✅ **Resumo Funcional do Mapa**
+
+| Seção           | Tipo                   | Observações                                       |
+| --------------- | ---------------------- | ------------------------------------------------- |
+| Home            | Página principal       | Inclui banner, CTA e navegação para outras seções |
+| Quem Somos      | Âncora / Seção         | Informações institucionais                        |
+| Produtos        | Âncora / Seção         | Cards com descrição e modais                      |
+| Proposta        | Link externo           | Integração com plataforma de simulação            |
+| Assistência 24h | Modal interno          | Links para páginas de seguradoras                 |
+| Contato         | Formulário             | HTML+PHP, envio de mensagem                       |
+| Localização     | Seção + Google Maps    | Endereço, mapa, telefone, WhatsApp                |
+| Rodapé          | Social + institucional | Direitos, redes sociais, imagem da empresa        |
+
+---
+
+Se quiser, posso criar uma **versão visual em diagrama** (tipo árvore hierárquica) ou gerar esse conteúdo em **PDF ou Word** para enviar a designers/desenvolvedores.
+
+Também posso sugerir **melhorias estruturais**, como:
+
+* Separar produtos em páginas dedicadas
+* Ter URLs amigáveis para SEO
+* Dividir contato e proposta em áreas distintas
+
+Você gostaria de algum desses próximos passos?
