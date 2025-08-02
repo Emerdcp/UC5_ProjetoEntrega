@@ -1,0 +1,50 @@
+.nav-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    /* gap: 1rem; */
+    background-color: #333;
+    padding: 20px;
+}
+
+.nav-bar .logo {
+    color: aliceblue;
+}
+
+.nav-bar ul {
+    list-style: none; /*Estilo da lista, none (remove remove o estilo da lista)*/
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    margin: 0;
+}
+
+.nav-bar a {
+    color: white;
+    text-decoration: none;
+    font-weight: 100;
+    padding: 10px;
+    background-color: rgb(86, 1, 243);
+    transition: 300ms;
+    border-radius: 10px;
+}
+
+.nav-bar a:hover {
+    color: rgb(201, 50, 206);
+    font-weight: bold;
+    transform: translateY(-10px);
+
+}
+
+nav li{
+    transition: 300ms;
+}
+
+nav li:hover{
+    transform: translateY(-10px)
+    rotate(7deg);
+
+}
+

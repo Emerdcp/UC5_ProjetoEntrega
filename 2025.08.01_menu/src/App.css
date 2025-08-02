@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Knewave&display=swap');
+
+* {
+    font-family: 'Knewave';
+}
+
+body {
+    margin: 0; /*Para ficar sem margem*/
+    /* font-family: sans-serif; Estilo de letras */
+}
+

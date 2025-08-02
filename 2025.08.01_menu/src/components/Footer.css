@@ -1,0 +1,14 @@
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    font-family: 'Courier New', Courier, monospace;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    font-family: inherit;
+}
