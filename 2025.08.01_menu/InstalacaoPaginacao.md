@@ -66,6 +66,76 @@ npm run dev
 
 A navegação é feita pelo componente `Navbar`, utilizando os links do `react-router-dom`.
 
+
+
+
+
+## 🧱 Componentes instalação 
+
+Instalação para navegação de paginação.
+
+```
+npm install react-router-dom
+```
+
+
+Seu package.json está quase todo correto, mas tem um pequeno problema com a versão do react-router-dom.
+
+## ❌ Problema:
+Você está usando:
+
+```
+"react-router-dom": "^7.7.1"
+```
+Não existe versão 7.x.x do react-router-dom até o momento.
+A versão mais recente (em agosto de 2025) é a 6.x — por exemplo:
+
+```
+"react-router-dom": "^6.23.0"
+```
+
+## ✅ Correção recomendada
+Atualize essa parte do seu package.json:
+
+```
+"dependencies": {
+  "react": "^19.1.0",
+  "react-dom": "^19.1.0",
+  "react-router-dom": "^6.23.0"
+}
+```
+
+## 📦 Como corrigir via terminal
+Remova a versão incorreta:
+
+```
+npm uninstall react-router-dom
+```
+
+## Instale a versão correta:
+
+```
+npm install react-router-dom@latest
+```
+
+## ✅ Verificação extra
+Você está usando o Vite (ótimo para desenvolvimento rápido)
+
+O type: "module" está certo para ESM
+
+Os scripts dev, build, preview estão corretos
+
+ESLint configurado
+
+
+
+
+
+
+
+
+
+
 ---
 
 ## 🧱 Componentes
