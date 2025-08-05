@@ -36,12 +36,7 @@ npm install
 npm run dev
 ```
 
-## Instale a versão correta:
-
-```
-npm install react-router-dom@latest
-```
-
+---
 
 ## ✅ 2. Limpar Projeto
 
