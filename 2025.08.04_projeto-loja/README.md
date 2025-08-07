@@ -1,12 +1,84 @@
-# React + Vite
+# 📘 Guia de Criação do Projeto React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Repositório inicial: [https://github.com/3insteinDev/projeo-loja](https://github.com/3insteinDev/projeto-loja)
 
-Currently, two official plugins are available:
+Documentação React: [https://react.dev/learn](https://react.dev/learn)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## ✅ 1. Criação de um novo repositório (GitHub)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+```Git Hub
+Com a sua conta no GitHub logada crie um novo repositório
+nomeUsuario/projeto-loja
+
+#Após o repositório criado clicque na opção Code/ clone e copie o endereço HTTPS
+Exemplo: https://github.com/nomeUsuario/projeto-loja.git
+
+
+# Acesse uma pasta no seu computador, onde deseja clonar
+cd caminho/para/sua/pasta
+
+# Digite o comando de clonar, inserindo o link copiado
+git clone https://github.com/nomeUsuario/projeto-loja.git
+
+# Acesse a pasta raiz do projeto clonado
+cd projeto-loja
+
+# Crie o projeto com Vite e template React dentro desta pasta
+npm create vite@latest . -- --template react
+
+# Instale as dependências
+npm install
+
+# Rode o projeto localmente
+npm run dev
+```
+
+## Instale a versão correta:
+
+```
+npm install react-router-dom@latest
+```
+
+## Instale do BootStrap
+
+```
+npm install bootstrap
+```
+
+- sempre colocar como primeiro no App.jsx
+```
+import 'bootstrap/dist/css/bootstrap.min.css'
+import 'bootstrap/dist/js/bootstrap.bundle.min'css';
+```
+
+## ✅ 2. Limpar Projeto
+
+
+### Apague
+```
+src/assets/react.svg
+src/App.css
+src/index.css
+```
+
+(Obs. Commit initial)
+
+
+## ✅ 3. Conteúdo dos arquivos
+
+
+### Editar src/main.jsx
+```jsx
+import React from 'react'
+import ReactDOM from 'react-dom/client'
+import App from './App.jsx'
+
+ReactDOM.createRoot(document.getElementById('root')).render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
+)
+```

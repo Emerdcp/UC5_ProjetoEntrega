@@ -1,0 +1,26 @@
+.contato-card {
+    background: #ffffff;    /*Define o fundo dos cards como branco*/
+    border: 1px solid #ddd;    /*Adiciona uma borda cinza clara aos cards*/
+    border-radius: 10px;    /*Arredonda os cantos do card*/
+    overflow: hidden;    /*Garante que nada saia dos limites do card.*/
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);    /* Adiciona uma leve sombra para dar profundidade ao card*/
+    width: 100%;    /*Define a largura fixa do card*/
+    transition: transform 0.3s box-shadow 0.3s ease;    /*Cria uma transição suave para qualquer transformação (como o efeito de hover).*/
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin: 20px 0;    /* adiciona margem superior e inferior */
+    /* transform: translateY(-5px) scale(1.02); */
+    /* max-width: 900px; Limita a largura máxima para melhor alinhamento */
+    margin: 40px auto; /* Centraliza horizontalmente e adiciona margem superior e inferior */
+    padding: 20px; /* Espaçamento interno */
+    box-shadow: 10px 10px 10px #000000; /* aumenta a sombra para dar efeito de elevação */
+    
+}
+
+/* Efeito ao passar o mouse */
+.contato-card:hover {
+    transform: translateY(-5px);    /* move o card para cima */
+   
+   
+}

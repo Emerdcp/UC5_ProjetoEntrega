@@ -1,0 +1,131 @@
+/*================== TODOS AS PÁGINAS REMOVE OS ESPAÇO ==================*/
+* {
+  margin: 0px; /*Remove as margens padrão de os elementos */
+  padding: 0px; /*Remove o preenchimento (padding) padrão os elementos */
+  box-sizing: border-box; /*Faz com que o tamanho de um elemento (largura/altura) inclua bordas e preenchimentos. Isso facilita o controle do tamanho dos elementos*/
+}
+
+/*================== COLOCAR PARAFRAGO 1CM PARA OS PARAGRAFOS DO SITE ==================*/
+/* p {
+  text-indent: 1cm; /* Define o recuo de 1 cm na primeira linha 
+} */
+
+/*================== CENTRALIZAÇÃO E JUSTICATIVA DE TEXTO (P)ARAGRAFO ==================*/
+p {
+  text-align: justify;  /* Centraliza o conteúdo inline (como texto, imagens e links) dentro de um elemento */
+}
+
+.hero p {
+  text-align: center;/* Centraliza o conteúdo inline (como texto, imagens e links) dentro de um elemento */
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif; /*Define a fonte principal da página (se o Segoe UI não estiver disponível, o navegador usará uma fonte sans-serif genérica*/
+  /* color: #333; Define a cor do texto para um tom de cinza escuro (#333) */
+  line-height: 1.6; /*Aumenta o espaçamento entre as linhas de texto, para uma leitura mais confortável.*/
+  /* background-color: #a8a8a8; Define o fundo da página com um tom de cinza muito claro */
+  padding-top: 60px;
+}
+
+.container {
+  max-width: 1100px; /* Define a largura máxima da container para 1100px. Isso impede que o conteúdo fique muito largo em telas grandes*/
+  margin: auto; /*Centraliza a container horizontalmente na página*/
+  padding: 10px; /*Adiciona um preenchimento interno de 20px em  os lados, evitando que o conteúdo fique muito colado às bordas*/
+}
+
+header {
+  background: #ffffff; /* Define a cor de fundo do cabeçalho como um tom de cinza - Amarelo vivo */
+  /* color: #333; Define a cor do texto dentro do cabeçalho */
+  /* padding: 2px 0; Adiciona 20px de espaço acima e abaixo do conteúdo do cabeçalho */
+}
+
+header .container {
+  display: flex;/* Define o container como um contêiner flexível, ativando o modelo de layout Flexbox */
+  justify-content: space-between;/* Distribui os itens de forma que o espaço entre eles seja igual. O primeiro item vai para a esquerda e o último item vai para a direita, com espaço entre os itens */
+  align-items: center;/* Alinha os itens verticalmente no centro do container, ao longo do eixo transversal (vertical em uma linha flexível horizontal) */
+}
+
+.hero {
+  background: #e0e0e0; /* Cinza claro Define o fundo da seção hero como um tom de cinza claro*/
+  text-align: center; /*Centraliza o texto dentro dessa seção*/
+  padding: 60px 20px; /*Adiciona 60px de espaço superior e inferior e 20px nas laterais*/
+}
+
+
+ /*================== PARAMETRO PARA FONTE E TAMANHO ==================*/
+ .hero h2 {
+  font-size: 2.5em; /*Aumenta o tamanho da fonte para 2,5 vezes o tamanho padrão*/
+  margin-bottom: 10px; /* Adiciona um espaço abaixo do título*/
+}
+
+.hero p {
+  font-size: 1.2em; /*Aumenta o tamanho da fonte do parágrafo para 1,2 vezes o tamanho padrão*/
+}
+
+.hero .btn {
+  background: #ffc107;/* Cor de fundo amarela */
+  /* color: #333;Cor do texto preta */
+  padding: 10px 20px;/* Espaçamento interno (10px de topo e 20px de laterais) */
+  border: none;/* Sem borda */
+  text-decoration: none;/* Sem sublinhado no texto */
+  margin-top: 20px;/* Margem superior de 20px */
+  display: inline-block; /* Exibe o botão em linha, mas com propriedades de bloco */
+  border-radius: 6px; /* Bordas arredondadas */
+  border-radius: 6px;/* Bordas arredondadas */
+  font-weight: bold;/* Texto em negrito */
+}
+
+.hero .btn:hover {
+  background-color: #ffb300;/* Cor de fundo amarela mais intensa ao passar o mouse */
+}
+
+section {
+  /* padding: 40px 20px;Espaçamento interno (40px no topo e 20px nas laterais) */
+  scroll-margin-top: 50px; /* Adiciona uma margem ao rolar a página, útil para menu fixo */
+}
+
+.sobre, .servicos, .proposta {
+  background: #fff;/* Fundo branco */
+  /*border-bottom: 1px solid #ddd;/* Borda inferior cinza claro */
+}
+
+
+.servicos .cards {
+  display: grid;/* Exibe os itens em grid */
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));/* Colunas automáticas com largura mínima de 180px */
+  gap: 20px;/* Espaço de 20px entre os itens */
+  list-style: none; /* Remove os marcadores de lista */
+  padding: 0;/* Remove o padding da lista */
+}
+
+.servicos .cards li {
+  background: #fdf5d4;  /* Fundo amarelo claro (tom pastel) */
+  padding: 20px; /* Espaçamento interno de 20px */
+  text-align: center;/* Texto centralizado */
+  border-radius: 8px;/* Bordas arredondadas */
+  font-weight: bold;/* Texto em negrito */
+  border: 1px solid #eee;/* Borda cinza claro */
+}
+
+form input, form textarea, form select {
+  width: 100%;/* Largura de 100% (preenche o espaço disponível) */
+  padding: 10px;/* Espaçamento interno de 10px */
+  margin: 5px 0;/* Margem de 10px no topo e embaixo */
+  border-radius: 6px;/* Bordas arredondadas */
+  border: 1px solid #ccc;/* Borda cinza claro */
+}
+
+form button {
+  background: #ffc107;/* Fundo amarelo */
+  /* color: #333;Texto preto */
+  border: none;/* Sem borda */
+  padding: 10px 20px;/* Espaçamento interno (10px de topo e 20px nas laterais) */
+  cursor: pointer;/* Cursor em forma de mãozinha */
+  border-radius: 6px;/* Bordas arredondadas */
+  font-weight: bold;/* Texto em negrito */
+}
+
+form button:hover {
+  background-color: #ffb300; /* Cor de fundo amarela mais intensa ao passar o mouse */
+}
+

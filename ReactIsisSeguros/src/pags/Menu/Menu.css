@@ -1,0 +1,120 @@
+
+/*================== MENU ==================*/
+/*-------REDUZIR O TAMANHO DA IMAGEM DO LOGO NA HOME-------------*/
+.logo-imglogo {
+    max-width: 80px; /* Ajuste o tamanho conforme necessário */
+    height: auto; /*Mantém a proporção original da imagem (largura x altura). Isso evita distorções*/
+    display: block; /*Faz a imagem se comportar como um bloco, permitindo o uso de margin para centralizar, por exemplo*/
+    margin: 0 auto; /* Centraliza se necessário */
+  
+    transition: all 0.3s ease; /* CSS com transição suave do logo*/
+  }
+  
+  /* Responsivo (opcional) */
+  @media (max-width: 576px) { /*Esse bloco só se aplica a telas pequenas (como celulares)*/
+    .logo-img {
+        max-width: 140px; /*Em telas pequenas, o logo será menor (até 140px), para caber bem em espaços mais estreitos*/
+    }
+  }
+  
+  /*-------AJUSTE DE MENU-------------*/
+  .logo-imglogo {
+    max-width: 60px;
+    height: auto;
+  
+      transition: all 0.3s ease;
+  }
+  .navbar {
+    font-size: 16px; /* Aumenta o tamanho da fonte */
+    line-height: 1.6; /* Dá um espaçamento maior entre as linhas */
+    color: #333; /* Cor das letras, você pode alterar para o tom que preferir */
+    box-shadow: #333;
+    text-align: center;
+    /* align-items: center !important; */
+  
+    transition: all 0.3s ease; /* CSS com transição suave do menu*/
+    /* padding: 0px !important; CSS com transição suave do menu */
+    background-color: #fff; /* mantendo a cor*/
+  
+    transition: all 0.3s ease;
+  }
+  
+  /*Usado no conteiner do menu para reduzir o tamanho*/
+  .menuPequeno {
+    display: flex;/* Define o elemento como um container flexível */
+    align-items: center;/* Alinha os itens verticalmente ao centro */
+    justify-content: space-between;/* Distribui o espaço entre os itens, jogando um para cada lado */
+    width: 100%;  /* Ocupa 100% da largura do contêiner pai */
+    padding: 0px !important;/* Remove o espaçamento interno, com prioridade sobre outras regras */
+  }
+  
+  /* Navbar reduzida ao rolar */
+  .navbar-shrink {
+    padding: 0.1rem 1rem !important;
+    background-color: #f8f9fa !important;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1) !important;
+  }
+  /* icon do menu reduzida ao rolar */
+  .icon-shrink {
+    height: 18px !important;
+    width: 18px !important;
+  }
+  
+  /* Redução do logo ao rolar */
+  .logo-shrink {
+    max-width: 30px !important; /* Tamanho menor do logo quando encolhido */
+    transition: all 0.3s ease !important;
+  }
+  
+  .nav-link {
+    color: #333 !important;
+    font-weight: 400; /* Normal estava com 500*/ 
+    margin-left: 10px;
+    transition: all 0.2s ease;
+  }
+  .nav-link:hover {
+    color: #ffb300 !important; /* Verde suave */
+    font-weight: 700; /*Negrito apenas no hover*/
+  }
+  
+  .navbar-toggler {
+    /* margin-left: auto; Empurra o botão para a direita */
+    /* align-self: center; Garante alinhamento vertical no flex container */
+    transform: translateY(-50%);/* Move o elemento para cima 50% da sua própria altura (centralização vertical) */
+    top: 50%;/* Posiciona o topo do elemento a 50% da altura do pai */
+    position: relative;/* Permite o uso de propriedades como `top`, mas respeita o fluxo normal do documento */
+  
+    transition: all 0.3s ease;/* Suaviza todas as mudanças de estilo em 0.3s */
+    border: none; /* Remove qualquer borda padrão */
+    background-color: transparent;/* Torna o fundo transparente */
+    padding: 6px;/* Espaçamento interno de 6px */
+    border-radius: 4px;/* Arredonda levemente os cantos */
+    box-shadow: none !important;/* Remove qualquer sombra, com prioridade */
+    outline: none !important;/* Remove o contorno ao focar, com prioridade */
+    margin-left: auto;/* Empurra o botão para a direita dentro de um flex container */
+  }
+  
+  /* Remove borda ao clicar */
+  .navbar-toggler:focus,
+  .navbar-toggler:active {
+    outline: none !important;/* Remove contorno ao focar ou ativar */
+    box-shadow: none !important;/* Remove qualquer sombra ao focar ou ativar */
+  }
+  
+  /* Aplica efeito de borda ao passar o mouse */
+  .navbar-toggler:hover {
+    border: 2px solid #ffb300; /* Borda dourada ao passar o mouse */
+    border-radius: 6px;/* Cantos mais arredondados no hover */
+    background-color: rgba(255, 179, 0, 0.15);/* Fundo amarelo-claro translúcido no hover */
+    cursor: pointer;/* Mostra o cursor de clique */
+  }
+  
+  .navbar-toggler-icon {
+    height: 24px;/* Altura do ícone */
+    width: 24px;/* Largura do ícone */
+    display: flex;/* Usa Flexbox para centralização */
+    align-items: center;/* Alinha o conteúdo verticalmente ao centro */
+    justify-content: center;/* Alinha o conteúdo horizontalmente ao centro */
+    background-size: 100% 100%; /* Garante que o ícone se encaixe bem */
+  }
+  
