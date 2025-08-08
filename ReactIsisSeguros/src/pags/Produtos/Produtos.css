@@ -1,0 +1,298 @@
+/* ====== Seção Produtos / Carrossel ====== */
+
+.secao-cards {
+  padding: 40px 20px;/* Espaçamento interno (40px no topo e 20px nas laterais) */
+  background-color: #fff;/* Fundo branco */
+}
+
+.container {
+  position: relative;/* Posicionamento relativo para poder usar posicionamento absoluto dentro dele */
+  max-width: 1200px;/* Largura máxima de 1200px */
+  margin: 0 auto; /* Centraliza o container horizontalmente */
+}
+
+.linha-topo {
+  display: flex;/* Usando Flexbox para organizar os itens */
+  justify-content: space-between;/* Distribui os itens igualmente com espaço entre eles */
+  align-items: center;/* Alinha os itens verticalmente no centro */
+  margin-bottom: 20px;/* Espaço abaixo da linha */
+}
+
+/* Área rolável horizontal */
+.cards-scroll {   
+  overflow-x: auto; /* Permite rolagem horizontal */
+  overflow-y: hidden;/* Desativa a rolagem vertical */
+  /* white-space: nowrap; */ /*----------------------faz diminuir tamanho do card--------------------*/
+  scroll-behavior: smooth;/* Rolagem suave */
+  padding: 10px 0;/* Espaçamento interno de 10px no topo e embaixo */
+    -ms-overflow-style: none;      /* IE/Edge */
+  scrollbar-width: none;         /* Firefox */
+}
+
+/* Wrapper dos cards em linha */
+.cards {
+  display: inline-flex; /* Exibe os cards em linha (como inline-block) mas com propriedades flexíveis */
+  gap: 20px;/* Espaçamento de 20px entre os cards */
+    justify-content: center;
+  margin-top: 20px;
+}
+
+/* Card */
+.card {
+  background: #ffffff; /*Define o fundo dos cards como branco*/
+  border: 1px solid #ddd; /*Adiciona uma borda cinza clara aos cards*/
+  border-radius: 10px; /*Arredonda os cantos do card*/
+  overflow: hidden; /*Garante que nada saia dos limites do card.*/
+  box-shadow: 10px 10px 10px #000000;/* Adiciona uma leve sombra para dar profundidade ao card*/
+  width: 300px;/*Define a largura fixa do card     ###########################  */
+  transition: transform 0.3s ease; /*Cria uma transição suave para qualquer transformação (como o efeito de hover).*/
+  display: flex;
+  flex-direction: column;
+  text-align: center; /* Texto centralizado dentro do card */
+}
+
+.card:hover {
+  transform: translateY(-5px); /*Quando o mouse passa sobre o card, ele sobe um pouco (efeito de hover).*/
+}
+
+/* Imagem do card */
+.card img {
+  width: 100%; /* Largura padrão para todas as imagens */
+    height: 180px; /* altura padrão para todas as imagens */
+    object-fit: cover; /* recorta e centraliza a imagem sem distorcer */
+  border-bottom: 1px solid #eee;
+  border-radius: 6px;/* Bordas arredondadas nas imagens */
+  margin-bottom: 10px;/* Espaço abaixo das imagens */
+}
+
+/* Título e texto do card */
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*================== BOTÃO MOVER "SETINHA" APRESENTADO NOS CARDS ==================*/
+.btn-scroll {
+  position: absolute; /* Posiciona o botão de forma absoluta dentro do contêiner pai */
+  top: 60%; /* Alinha verticalmente ao centro */
+  transform: translateY(-50%); /* Corrige o alinhamento central exato */
+  border: none; /*Coloca Broda no Botão*/
+  background-color: transparent; /* <-- Remove o fundo */
+  color: #333; /* Cor da seta > */
+  padding: 10px;
+  cursor: pointer; /*Ao Clicar*/
+  z-index: 10;
+  border-radius: 0; /* <-- Remove o formato arredondado */
+  font-size: 32px; /* Tamanho da seta */
+  box-shadow: none; /* Remove qualquer sombra */
+  transition: transform 0.3s ease; /* Suaviza a animação de movimento */
+  background: none; /* Remove o fundo padrão do botão */
+  cursor: pointer; /* Mostra cursor de clique */
+  z-index: 1; /* Garante que o botão fique acima dos outros elementos */
+}
+
+.btn-scroll.left {
+  left: -20px; /* Aumente esse valor para mover mais pra fora */
+}
+
+.btn-scroll.right {
+  right: -20px; /* Aumente esse valor para mover mais pra fora */
+}
+
+/* Animação contínua esquerda */
+.btn-scroll.left:hover {
+  animation: moveLeft 0.6s infinite alternate ease-in-out;
+}
+
+/* Animação contínua direita */
+.btn-scroll.right:hover {
+  animation: moveRight 0.6s infinite alternate ease-in-out;
+}
+
+/* Keyframes para botão da esquerda */
+@keyframes moveLeft {
+  from {
+    transform: translateY(-50%) translateX(0);
+  }
+  to {
+    transform: translateY(-50%) translateX(-12px);
+  }
+}
+
+/* Keyframes para botão da direita */
+@keyframes moveRight {
+  from {
+    transform: translateY(-50%) translateX(0);
+  }
+  to {
+    transform: translateY(-50%) translateX(12px);
+  }
+}
+
+/*================== BARRA DE ROLAGEM BOLINHA ... ==================*/
+.dots-container {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 0 5px;
+  background-color: #ccc;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.dot.active {
+  background-color: #464545;
+}
+
+.cards-scroll {
+-ms-overflow-style: none; 
+scrollbar-width: none; /*Barra de relagem, retira*/
+}
+
+.seta-btn {
+  width: 50px;
+  height: 90px;
+  object-fit: contain;
+}
+
+
+/*================== CARDS LADO A LADO ==================*/
+
+
+
+/*================== COLOCADO PARA PADRONIZAR O TAMANHO DAS IMAGENS DO CARDS ==================*/
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+
+
+.card h3 {
+  margin: 15px;
+  color: #333;
+}
+
+.card p {
+  margin: 0 15px 15px;
+  color: #666;
+}
+
+/* .card h3 {
+  margin: 15px;
+  color: #333;
+} */
+
+/*================== COLOCADO PARA PADRONIZAR O TAMANHO DAS IMAGENS DO CARDS ==================*/
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 100%;
+  height: 180px; /* altura padrão para todas as imagens */
+  object-fit: cover; /* recorta e centraliza a imagem sem distorcer */
+  border-bottom: 1px solid #eee;
+}
+
+.card h3 {
+  margin: 15px;
+  color: #333;
+}
+
+.card p {
+  margin: 0 15px 15px;
+  color: #666;
+}
+
+.card p {
+  /* margin: 0 15px 15px; */
+  color: #666;
+}
+
+
+
+.contato-card {
+  background: #ffffff; /*Define o fundo dos cards como branco*/
+  border: 1px solid #ddd; /*Adiciona uma borda cinza clara aos cards*/
+  border-radius: 10px; /*Arredonda os cantos do card*/
+  overflow: hidden; /*Garante que nada saia dos limites do card.*/
+  width: 100%; /*Define a largura fixa do card*/
+  transition: transform 0.3s ease; /*Cria uma transição suave para qualquer transformação (como o efeito de hover).*/
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+
+/*================== COLOCADO PARA PADRONIZAR O TAMANHO DAS IMAGENS DO CARDS ==================*/
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 100%;
+  height: 180px; /* altura padrão para todas as imagens */
+  object-fit: cover; /* recorta e centraliza a imagem sem distorcer */
+  border-bottom: 1px solid #eee;
+}
+
+.card h3 {
+  margin: 15px;
+  color: #333;
+}
+
+.card p {
+  margin: 0 15px 15px;
+  color: #666;
+}
+
+
+/*================== TAMANHO DAS IMAGENS TELEFOEN E WHATS==================*/
+#localizacao img {
+  width: 20px; /* ou qualquer tamanho que desejar */
+  height: auto; /* mantém a proporção */
+  margin: 5px 0;
+}
+
+#contato img {
+  width: 20px; /* ou qualquer tamanho que desejar */
+  height: auto; /* mantém a proporção */
+  margin: 5px 0;
+}
+
+#produtos .produtosBotao {
+  width: 20px; /* ou qualquer tamanho que você deseja */
+  height: auto; /* mantém a proporção */
+  margin: 5px 0;
+}
+
+#quemSomos img {
+  width: 20px; /* ou qualquer tamanho que desejar */
+  height: auto; /* mantém a proporção */
+  margin: 5px 0;
+}
+
+/*================== MODAL TAMANHO DAS IMAGENS TELEFOEN E WHATS==================*/
+.telWhats {
+  width: 20px !important;
+  height: auto !important;
+  margin: 5px 0;
+  vertical-align: middle !important;
+}
