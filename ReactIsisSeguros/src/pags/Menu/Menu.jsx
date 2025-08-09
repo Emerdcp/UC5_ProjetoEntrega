@@ -79,8 +79,7 @@ function Menu() {
                         <li className="nav-item"><a className="nav-link" href="#produtos">Produtos</a></li>
                         <li className="nav-item"><a className="nav-link" href="#contato">Contato</a></li>
                         <li className="nav-item"><a className="nav-link" href="#localizacao">Localização</a></li>
-                        <li className="nav-item"><a className="nav-link" href="#" id="btn-assistencia">Assistência 24hs</a></li>
-                        <li className="nav-item"><a className="nav-link" href="#" onClick={(e) => { e.preventDefault(); alert("Abrir login..."); }}>Área Restrita</a></li>
+                        <li className="nav-item"><a className="nav-link" to="/assistencia" id="btn-assistencia">Assistência 24hs</a></li>
                     </ul>
                 </div>
             </div>

@@ -11,21 +11,20 @@ import Produtos from './pags/Produtos/Produtos'
 import Formulario from './pags/Formulario/Formulario'
 import Localizacao from './pags/Localizacao/Localizacao'
 import Footer from './pags/Footer/Footer'
-import Home from './Home';
-import Assistencia from './pags/Assistencia/Assistencia';
 
 function App() {
 
   return (
     <>
-      <BrowserRouter>
-        <Routes>
-          <Route path='/' element={<Home />}>
-            <Route index element={<Home />} />
-            <Route path='Assistencia' element={<Assistencia />} />
-          </Route>
-        </Routes>
-      </BrowserRouter>
+      {/* <div className='container'> */}
+        <Menu />
+        <Banner />
+        <QuemSomos />
+        <Produtos />
+        <Formulario />
+        <Localizacao />
+        <Footer />
+      {/* </div> */}
     </>
   )
 }
