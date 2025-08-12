@@ -1,0 +1,87 @@
+/*================== CARDS LADO A LADO ==================*/
+.cards {   
+    /* display: flex; Define que os cards sejam dispostos em linha */ /*----------------------trava o cards e não deixa em linha--------------------*/
+    /* flex-wrap: wrap; Faz com que os cards "quebrem" para a próxima linha quando não couberem */ /*----------------------trava o cards e não deixa em linha--------------------*/
+    gap: 20px; /*Adiciona um espaçamento de 20px entre os cards*/
+    justify-content: center; /*Centraliza os cards horizontalmente*/
+    margin-top: 20px;
+  }
+  
+  .card {
+    background: #ffffff; /*Define o fundo dos cards como branco*/
+    border: 1px solid #ddd; /*Adiciona uma borda cinza clara aos cards*/
+    border-radius: 10px; /*Arredonda os cantos do card*/
+    overflow: hidden; /*Garante que nada saia dos limites do card.*/
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1); /* Adiciona uma leve sombra para dar profundidade ao card*/
+    width: 300px; /*Define a largura fixa do card*/
+    transition: transform 0.3s ease; /*Cria uma transição suave para qualquer transformação (como o efeito de hover).*/
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px); /*Quando o mouse passa sobre o card, ele sobe um pouco (efeito de hover).*/
+  }
+  
+  .card img {
+    width: 100%;
+    height: 180px; /* altura padrão para todas as imagens */
+    /* height: auto; */
+    /* display: block; */
+    object-fit: cover;
+    border-bottom: 1px solid #eee;
+  }
+  
+  /* .card h3 {
+    margin: 15px;
+    color: #333;
+  } */
+  
+  .card h3 .card{
+    margin: 15px;
+  }
+  .card h3 {
+    color: #333;
+  }
+  
+  .card p {
+    /* margin: 0 15px 15px; */
+    color: #666;
+  }
+  
+  
+  
+  .contato-card {
+    background: #ffffff; /*Define o fundo dos cards como branco*/
+    border: 1px solid #ddd; /*Adiciona uma borda cinza clara aos cards*/
+    border-radius: 10px; /*Arredonda os cantos do card*/
+    overflow: hidden; /*Garante que nada saia dos limites do card.*/
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1); /* Adiciona uma leve sombra para dar profundidade ao card*/
+    width: 100%; /*Define a largura fixa do card*/
+    transition: transform 0.3s ease; /*Cria uma transição suave para qualquer transformação (como o efeito de hover).*/
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+  }
+  /*================== COLOCADO PARA PADRONIZAR O TAMANHO DAS IMAGENS DO CARDS ==================*/
+  
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .card img {
+    width: 100%;
+    height: 180px; /* altura padrão para todas as imagens */
+    object-fit: cover; /* recorta e centraliza a imagem sem distorcer */
+    border-bottom: 1px solid #eee;
+  }
+  
+  .card h3 {
+    margin: 15px;
+    color: #333;
+  }
+  
+  .card p {
+    margin: 0 15px 15px;
+    color: #666;
+  }

@@ -1,54 +1,113 @@
-import { useEffect } from 'react'
-import './Assistencia.css'
+import { Link } from 'react-router-dom'
+// import './Assistencia.css'
+
 
 function Assistencia() {
 
     return (
         <section>
-            <div id="modal-assistencia" className="modal">
+           
                 <div className="modal-content">
-                    <span className="close" id="fechar-assistencia">&times;</span>
-                    <h3 className="text-center"><b>Assistência 24hs</b></h3>
-                    <p className="text-center">Escolha qual a sua seguradora.</p>
-                    <div className="cards">
-                        <div classn="card">
-                            <a href="seguradoras/hdi.html"
-                                style="text-decoration: none; color: inherit; display: flex; flex-direction: column; align-items: center;">
-                                <img src="/logoSeguradoras/hdiSeguro.jpg" alt="HDI" />
-                                    <h4>Clique aqui</h4>
-                            </a>
+                                       
+                   
+                        <div className="assistencia-container">
+                            <h3 className="text-center"><b>Assistência 24hs</b></h3>
+                            <p className="text-center">Escolha qual a sua seguradora.</p>
+                            <div className="cards">
+                                <div className="card">
+                                    <Link
+                                        to="assistencia/seguradoras/Azul"
+                                        style={{
+                                            textDecoration: 'none',
+                                            color: 'inherit',
+                                            display: 'flex',
+                                            flexDirection: 'column',
+                                            alignItems: 'center'
+                                        }}
+                                    >
+                                        <img src="/seguradoras/azulSeguros.jpg" alt="Azul" />
+                                        <h4>Clique aqui</h4>
+                                    </Link>
+                                </div>
+                                <div className="card">
+                                    <Link
+                                        to="assistencia/seguradoras/Hdi"
+                                        style={{
+                                            textDecoration: 'none',
+                                            color: 'inherit',
+                                            display: 'flex',
+                                            flexDirection: 'column',
+                                            alignItems: 'center'
+                                        }}
+                                    >
+                                        <img src="/seguradoras/hdiSeguro.jpg" alt="HDI" />
+                                        <h4>Clique aqui</h4>
+                                    </Link>
+                                </div>
+                                <div className="card">
+                                    <Link
+                                        to="assistencia/seguradoras/PortoSeguro"
+                                        style={{
+                                            textDecoration: 'none',
+                                            color: 'inherit',
+                                            display: 'flex',
+                                            flexDirection: 'column',
+                                            alignItems: 'center'
+                                        }}
+                                    >
+                                        <img src="/seguradoras/portoSeguro.jpg" alt="Porto Seguro" />
+                                        <h4>Clique aqui</h4>
+                                    </Link>
+                                </div>
+                                <div className="card">
+                                    <Link
+                                        to="assistencia/seguradoras/Mitsui"
+                                        style={{
+                                            textDecoration: 'none',
+                                            color: 'inherit',
+                                            display: 'flex',
+                                            flexDirection: 'column',
+                                            alignItems: 'center'
+                                        }}
+                                    >
+                                        <img src="/seguradoras/mitsui.jpg" alt="Mitsui" />
+                                        <h4>Clique aqui</h4>
+                                    </Link>
+                                </div>
+                                <div className="card">
+                                    <Link
+                                        to="assistencia/seguradoras/Tokio"
+                                        style={{
+                                            textDecoration: 'none',
+                                            color: 'inherit',
+                                            display: 'flex',
+                                            flexDirection: 'column',
+                                            alignItems: 'center'
+                                        }}
+                                    >
+                                        <img src="/seguradoras/tokio.jpg" alt="Tokio" />
+                                        <h4>Clique aqui</h4>
+                                    </Link>
+                                </div>
+                                <div className="card">
+                                    <Link
+                                        to="assistencia/seguradoras/Tokio"
+                                        style={{
+                                            textDecoration: 'none',
+                                            color: 'inherit',
+                                            display: 'flex',
+                                            flexDirection: 'column',
+                                            alignItems: 'center'
+                                        }}
+                                    >
+                                        <img src="/seguradoras/tokio.jpg" alt="Tokio"/>
+                                        <h4>Clique aqui</h4>
+                                    </Link>
+                                </div>
+                            </div>
                         </div>
-                        <div className="card">
-                           <a href="seguradoras/portoSeguro.html"
-                                style="text-decoration: none; color: inherit; display: flex; flex-direction: column; align-items: center;">
-                                <img src="/logoSeguradoras/portoSeguro.jpg" alt="Porto" />
-                                    <h4>Clique aqui</h4>
-                            </a>
-                        </div>
-                        <div className="card">
-                            <a href="seguradoras/azulSeguro.html"
-                                style="text-decoration: none; color: inherit; display: flex; flex-direction: column; align-items: center;">
-                                <img src="/logoSeguradoras/azulSeguros.jpg" alt="Azul" />
-                                    <h4>Clique aqui</h4>
-                            </a>
-                        </div>
-                        <div className="card">
-                            <a href="seguradoras/mitsui.html"
-                                style="text-decoration: none; color: inherit; display: flex; flex-direction: column; align-items: center;">
-                                <img src="/logoSeguradoras/mitsui.jpg" alt="Mitsui" />
-                                    <h4>Clique aqui</h4>
-                            </a>
-                        </div>
-                        <div className="card">
-                            <a href="seguradoras/tokio.html"
-                                style="text-decoration: none; color: inherit; display: flex; flex-direction: column; align-items: center;">
-                                <img src="/logoSeguradoras/tokio.jpg" alt="Tokio" />
-                                    <h4>Clique aqui</h4>
-                            </a>
-                        </div>
-                    </div>
                 </div>
-            </div>
+           
         </section>
     )
 }

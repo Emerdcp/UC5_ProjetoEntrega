@@ -7,7 +7,7 @@ function QuemSomos(){
             <div className="container">
                 <div className="card contato-card">
                     <div className="linha-topo">
-                        <h2 class="titulo-centralizado"><b>Quem Somos</b></h2>
+                        <h2 className="titulo-centralizado"><b>Quem Somos</b></h2>
                     </div>
                     <p>A ISÍS Seguros é uma corretora especializada em oferecer uma ampla gama de seguros e benefícios, tanto para
                         pessoas físicas quanto para empresas. Com uma equipe altamente qualificada e parcerias sólidas com as melhores

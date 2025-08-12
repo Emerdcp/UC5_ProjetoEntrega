@@ -2,38 +2,48 @@ import './Formulario.css';
 import '../../../src/App.css';
 
 function Formulario() {
+    const handleSubmit = (event) => {
+        event.preventDefault(); // evita o reload da página
+        console.log("Form enviado!");
+        // Aqui você pode capturar os valores e enviar via fetch/axios para seu backend
+    };
+
+    const limparFormulario = () => {
+        document.getElementById("form-proposta").reset();
+    };
+
     return (
-        <section id="contato" class="proposta">
-            <div class="container">
-                <div class="card contato-card">
-                    <div class="linha-topo">
-                        <h2 class="titulo-centralizado"><b>Entre em Contato</b></h2>
+        <section id="contato" className="proposta">
+            <div className="container">
+                <div className="card contato-card">
+                    <div className="linha-topo">
+                        <h2 className="titulo-centralizado"><b>Entre em Contato</b></h2>
                     </div>
-                    <form class="container mb-4" id="form-proposta" action="enviar-email.php" method="POST">
-                        <div class="row g-3">
-                            <div class="col-md-4">
-                                <label for="nome" class="form-label">Nome</label>
-                                <input type="text" class="form-control" id="nome" name="nome" placeholder="Seu nome" required />
-                                <small class="form-text text-muted"></small>
+                    <form className="container mb-4" id="form-proposta" action="enviar-email.php" method="POST">
+                        <div className="row g-3">
+                            <div className="col-md-4">
+                                <label htmlFor="nome" className="form-label">Nome</label>
+                                <input type="text" className="form-control" id="nome" name="nome" placeholder="Seu nome" required />
+                                <small className="form-text text-muted"></small>
                             </div>
-                            <div class="col-md-4">
-                                <label for="telefone" class="form-label">Telefone</label>
-                                <input type="tel" class="form-control" id="telefone" name="telefone" placeholder="(99)99999-9999"
+                            <div className="col-md-4">
+                                <label htmlFor="telefone" className="form-label">Telefone</label>
+                                <input type="tel" className="form-control" id="telefone" name="telefone" placeholder="(99)99999-9999"
                                     required /> 
                             </div>
-                            <div class="col-md-4">
-                                <label for="email" class="form-label">Email</label>
-                                <input type="email" class="form-control" id="email" name="email" placeholder="exemplo@dominio.com"
+                            <div className="col-md-4">
+                                <label htmlFor="email" className="form-label">Email</label>
+                                <input type="email" className="form-control" id="email" name="email" placeholder="exemplo@dominio.com"
                                     required />
                             </div>
-                            <div class="col-12">
-                                <label for="mensagem" class="form-label">Mensagem</label>
-                                <textarea class="form-control" id="mensagem" name="mensagem" placeholder="Sua mensagem" rows="4"
+                            <div className="col-12">
+                                <label htmlFor="mensagem" className="form-label">Mensagem</label>
+                                <textarea className="form-control" id="mensagem" name="mensagem" placeholder="Sua mensagem" rows="4"
                                     required></textarea>
                             </div>
-                            <div class="col-12 text-end">
+                            <div className="col-12 text-end">
                                 <button type="submit">Enviar</button>
-                                <button type="button" class="botao" onclick="limparFormulario()">Cancelar</button>
+                                <button type="button" className=" botao ms-2" onClick={limparFormulario}>Cancelar</button>
                             </div>
                         </div>
                     </form>

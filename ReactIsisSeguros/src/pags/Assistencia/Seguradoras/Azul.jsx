@@ -1,4 +1,5 @@
 import { useEffect } from 'react'
+import { Link } from 'react-router-dom'
 import './Azul.css'
 
 function Azul() {
@@ -6,10 +7,10 @@ function Azul() {
     return (
         <header id="azul">
             <div className="logos-seguradoras text-center">
-                <img src="../imagens/logoSeguradoras/azulSeguros.jpg" alt="Porto Seguros" class="logo-azulseguros" />
+                <img src="../imagens/logoSeguradoras/azulSeguros.jpg" alt="Porto Seguros" className="logo-azulseguros" />
             </div>
             <div className="text-center">
-                <a href="../index.html" class="botao-home">
+                <a href="../index.html" className="botao-home">
                     <img src="../imagens/isis.png" alt="Home" /> Voltar</a>
             </div>
             <div className="textos-seguradoras text-center">
@@ -18,20 +19,20 @@ function Azul() {
                     <div className="row">
                         <div className="col-12 col-md-4">
                             <b>Capitais</b><br />
-                            <a href="tel:40043700" class="telefone-btn botao-topo">
-                                <img src="../imagens/telefone.png" alt="Telefone" class="telWhats" /> 4004.3700
+                            <a href="tel:40043700" className="telefone-btn botao-topo">
+                                <img src="../imagens/telefone.png" alt="Telefone" className="telWhats" /> 4004.3700
                             </a>
                         </div>
                         <div className="col-12 col-md-4">
                             <b>Demais Localidades</b><br />
-                            <a href="tel:08007030203" class="telefone-btn botao-topo">
-                                <img src="../imagens/telefone.png" alt="Telefone" class="telWhats" /> 0800.703.0203
+                            <a href="tel:08007030203" className="telefone-btn botao-topo">
+                                <img src="../imagens/telefone.png" alt="Telefone" className="telWhats" /> 0800.703.0203
                             </a>
                         </div>
                         <div className="col-12 col-md-4">
                             <b>WhatsApp</b><br />
-                            <a href="https://wa.me/552139062985" class="telefone-btn botao-topo" target="_blank">
-                                <img src="../imagens/whatsapp.png" alt="Whatsapp" class="telWhats" /> (21)3906.2985
+                            <a href="https://wa.me/552139062985" className="telefone-btn botao-topo" target="_blank">
+                                <img src="../imagens/whatsapp.png" alt="Whatsapp" className="telWhats" /> (21)3906.2985
                             </a>
                         </div>
                     </div>

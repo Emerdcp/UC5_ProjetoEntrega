@@ -28,8 +28,3 @@ export default Banner
 
 
 
-
-// < !--================== SESSÃO SOLICITE UMA PROPOSTA ================== -->
-//     <section class="hero">
-
-//     </section>

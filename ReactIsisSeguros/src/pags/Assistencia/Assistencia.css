@@ -1,0 +1,113 @@
+/* ===================== Estilos para o modal ===================== */
+
+.modal {
+    display: none; /* Oculta o modal por padrão */
+    position: fixed; /* Fixa na tela, mesmo com scroll */
+    z-index: 1000; /* Garante que o modal fique acima de outros elementos */
+    left: 0;
+    top: 0;
+    width: 100%; /* Ocupa toda a largura da tela */
+    height: 100%; /* Ocupa toda a altura da tela */
+    background-color: rgba(0, 0, 0, 0.6); /* Fundo escuro semitransparente */
+}
+
+.modal-content {
+    background-color: #fff; /* Fundo branco para o conteúdo */
+    margin: 10% auto; /* Centraliza o conteúdo vertical e horizontalmente */
+    padding: 30px; /* Espaçamento interno */
+    width: 90%; /* Largura de 90% da tela */
+    max-width: 900px; /* Limite máximo de largura */
+    border-radius: 10px; /* Cantos arredondados */
+    position: relative; /* Necessário para posicionar elementos filhos com position absolute */
+}
+
+/** ========================================
+ * Botão de fechar (caso seja implementado)
+ * ======================================== **/
+
+.close {
+    position: absolute; /* Posiciona dentro do modal-content */
+    top: 10px;
+    right: 15px;
+    font-size: 24px; /* Tamanho do "X" */
+    cursor: pointer; /* Cursor de mão ao passar o mouse */
+}
+
+/** ========================================
+ * Container principal da seção de assistência
+ * ======================================== **/
+
+.assistencia-container {
+    text-align: center; /* Centraliza os textos internos */
+}
+
+/** ========================================
+ * Container dos cards com seguradoras
+ * ======================================== **/
+
+.cards {
+    display: flex; /* Usa flexbox para layout dos cards */
+    gap: 20px; /* Espaço entre os cards */
+    flex-wrap: wrap; /* Permite quebra de linha para responsividade */
+    margin-top: 20px; /* Espaço acima dos cards */
+    justify-content: center; /* Centraliza os cards horizontalmente */
+}
+
+/** ========================================
+ * Estilo individual de cada card
+ * ======================================== **/
+
+.card {
+    flex: 1 1 250px; /* Cresce e encolhe com base no espaço disponível, largura base de 250px */
+    background-color: #f5f5f5; /* Fundo cinza claro */
+    padding: 15px; /* Espaçamento interno */
+    border-radius: 10px; /* Cantos arredondados */
+    text-align: center; /* Centraliza o conteúdo do card */
+    box-shadow: 10px 10px 10px #000000;/* Adiciona uma leve sombra para dar profundidade ao card*/
+    transition: transform 0.2s ease; /* Animação suave ao interagir */
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Efeito de leve elevação ao passar o mouse */
+}
+
+/** ========================================
+ * Imagens exibidas dentro dos cards
+ * ======================================== **/
+
+.card img {
+    width: 100%; /* Ocupa toda a largura do card */
+    height: 120px; /* Altura fixa */
+    object-fit: cover; /* Corta a imagem para preencher o espaço sem distorção */
+    border-radius: 8px; /* Arredonda os cantos da imagem */
+    margin-bottom: 10px; /* Espaço abaixo da imagem */
+}
+
+/** ========================================
+ * Títulos e textos dos cards
+ * ======================================== **/
+
+.card h4 {
+    margin: 10px 0 5px; /* Espaçamento acima e abaixo do título */
+    font-size: 18px; /* Tamanho da fonte do título */
+}
+
+.card p {
+    margin: 4px 0; /* Espaço acima e abaixo dos parágrafos */
+    font-size: 14px; /* Tamanho da fonte dos parágrafos */
+}
+
+/** ========================================
+ * Classe opcional para estilizar os <Link>
+ * (caso deseje remover os estilos inline)
+ * ======================================== **/
+
+.card-link {
+    text-decoration: none; /* Remove sublinhado */
+    color: inherit; /* Mantém a cor do texto herdada */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza itens verticalmente */
+}
+
+
