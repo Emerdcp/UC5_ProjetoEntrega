@@ -1,11 +1,11 @@
 import './Seguradoras.css'
 
-function Azul() {
+function Hdi() {
 
     return (
-        <section id="azul" className='seguradoras-page'>
+        <section id="Hdi" className='seguradoras-page'>
             <div className="logos-seguradoras text-center">
-                <img src="/seguradoras/azulSeguros.jpg" alt="Azul Seguros" className="logo-azulseguros" />
+                <img src="/seguradoras/hdiSeguro.jpg" alt="HDI Seguros" className="logo-hdi" />
             </div>
             <div className="textos-seguradoras text-center">
                 <h1>Assistência 24hs</h1>
@@ -13,14 +13,14 @@ function Azul() {
                     <div className="row">
                         <div className="col-12 col-md-4">
                             <b>Capitais</b><br />
-                            <a href="tel:40043700" className="telefone-btn botao-topo">
-                                <img src="/telefone.png" alt="Telefone" className="telWhats" /> 4004.3700
+                            <a href="tel:30035390" className="telefone-btn botao-topo">
+                                <img src="/telefone.png" alt="Telefone" className="telWhats" /> 3003.5390
                             </a>
                         </div>
                         <div className="col-12 col-md-4">
                             <b>Demais Localidades</b><br />
-                            <a href="tel:08007030203" className="telefone-btn botao-topo">
-                                <img src="/telefone.png" alt="Telefone" className="telWhats" /> 0800.703.0203
+                            <a href="tel:08004344340" className="telefone-btn botao-topo">
+                                <img src="/telefone.png" alt="Telefone" className="telWhats" /> 0800.434.4340
                             </a>
                         </div>
                         <div className="col-12 col-md-4">
@@ -36,4 +36,4 @@ function Azul() {
     )
 }
 
-export default Azul
+export default Hdi

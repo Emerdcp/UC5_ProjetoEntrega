@@ -1,11 +1,11 @@
 import './Seguradoras.css'
 
-function Azul() {
+function Mitsui() {
 
     return (
-        <section id="azul" className='seguradoras-page'>
+        <section id="Mitsui" className='seguradoras-page'>
             <div className="logos-seguradoras text-center">
-                <img src="/seguradoras/azulSeguros.jpg" alt="Azul Seguros" className="logo-azulseguros" />
+                <img src="/seguradoras/mitsui.jpg" alt="Mitsui Seguros" className="logo-mitsui" />
             </div>
             <div className="textos-seguradoras text-center">
                 <h1>Assistência 24hs</h1>
@@ -13,8 +13,8 @@ function Azul() {
                     <div className="row">
                         <div className="col-12 col-md-4">
                             <b>Capitais</b><br />
-                            <a href="tel:40043700" className="telefone-btn botao-topo">
-                                <img src="/telefone.png" alt="Telefone" className="telWhats" /> 4004.3700
+                            <a href="tel:03007726744" className="telefone-btn botao-topo">
+                                <img src="/telefone.png" alt="Telefone" className="telWhats" /> 0300.772.6744
                             </a>
                         </div>
                         <div className="col-12 col-md-4">
@@ -36,4 +36,4 @@ function Azul() {
     )
 }
 
-export default Azul
+export default Mitsui

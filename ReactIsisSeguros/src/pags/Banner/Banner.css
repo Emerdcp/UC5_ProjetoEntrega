@@ -7,6 +7,7 @@
     /* color: white; Para deixar o texto visível sobre a imagem */
     /* padding: 100px 0; Ajuste o espaçamento vertical */
   }
+
   
   .hero .overlay {
     background-color: rgba(0, 0, 0, 0.6); /* Ajuste a opacidade aqui */

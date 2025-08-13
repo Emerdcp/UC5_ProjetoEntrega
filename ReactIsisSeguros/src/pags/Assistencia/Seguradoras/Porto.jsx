@@ -1,11 +1,11 @@
 import './Seguradoras.css'
 
-function Azul() {
+function Porto() {
 
     return (
-        <section id="azul" className='seguradoras-page'>
+        <section id="Porto" className='seguradoras-page'>
             <div className="logos-seguradoras text-center">
-                <img src="/seguradoras/azulSeguros.jpg" alt="Azul Seguros" className="logo-azulseguros" />
+                <img src="/seguradoras/portoSeguro.jpg" alt="Porto Seguros" className="logo-porto" />
             </div>
             <div className="textos-seguradoras text-center">
                 <h1>Assistência 24hs</h1>
@@ -13,14 +13,14 @@ function Azul() {
                     <div className="row">
                         <div className="col-12 col-md-4">
                             <b>Capitais</b><br />
-                            <a href="tel:40043700" className="telefone-btn botao-topo">
-                                <img src="/telefone.png" alt="Telefone" className="telWhats" /> 4004.3700
+                            <a href="tel:4004076786" className="telefone-btn botao-topo">
+                                <img src="/telefone.png" alt="Telefone" className="telWhats" /> 4004.076.786
                             </a>
                         </div>
                         <div className="col-12 col-md-4">
                             <b>Demais Localidades</b><br />
-                            <a href="tel:08007030203" className="telefone-btn botao-topo">
-                                <img src="/telefone.png" alt="Telefone" className="telWhats" /> 0800.703.0203
+                            <a href="tel:03003376786" className="telefone-btn botao-topo">
+                                <img src="/telefone.png" alt="Telefone" className="telWhats" /> 0300.337.6786
                             </a>
                         </div>
                         <div className="col-12 col-md-4">
@@ -36,4 +36,4 @@ function Azul() {
     )
 }
 
-export default Azul
+export default Porto

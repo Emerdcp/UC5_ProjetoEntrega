@@ -1,0 +1,85 @@
+/*================== BOTÃO VOLTAR AO TOPO HOME ==================*/
+.seguradoras-page .row {
+  justify-content: center;
+}
+
+.seguradoras-page{
+  min-height: 87vh; /* altura da tela toda */
+  display: flex;
+  flex-direction: column;
+}
+
+.seguradoras-page .botao-topo {
+  display: inline-block; /* Permite definir largura/altura e se comporta como elemento em linha */
+  padding: 5px 20px; /* Espaçamento interno: 5px verticalmente e 15px horizontalmente */
+  cursor: pointer; /* Altera o cursor para a mãozinha ao passar por cima */
+  background-color: #ffc107; /* Define a cor de fundo (amarelo/dourado) */
+  color: rgb(0, 0, 0); /* Define a cor do texto como preta */
+  text-decoration: none; /* Remove o sublinhado, geralmente de links */
+  border-radius: 6px; /* Arredonda levemente os cantos do elemento */
+  font-weight: bold; /* Deixa o texto em negrito */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Adiciona uma sombra suave para dar profundidade */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Suaviza a transição de cor de fundo e transformações */
+  white-space: nowrap; /* Impede que o texto quebre em várias linhas */
+  width: 180px;                   /* Largura fixa */
+}
+
+.seguradoras-page .botao-topo:hover {
+  background-color: #ffb300;
+  transform: translateY(-1px);
+}
+
+.seguradoras-page .botao-topo:active {
+  transform: scale(0.98);
+}
+
+.seguradoras-page .alinha-direita {
+  text-align: right;
+  margin-bottom: 10px; /* opcional: dá um espacinho */
+}
+
+/*================== MODAL TAMANHO DAS IMAGENS TELEFOEN E WHATS==================*/
+.seguradoras-page .telWhats {
+  width: 20px !important;
+  height: auto !important;
+  margin: 5px 0;
+  vertical-align: middle !important;
+}
+
+.seguradoras-page .logo-azulseguros {
+  max-width: 300px; /* Tamanho da logo da HDI Seguros */
+  height: auto;
+  margin: 10px;
+  padding-top: 100px;
+}
+
+.seguradoras-page .logo-hdi {
+  max-width: 300px; /* Tamanho da logo da HDI Seguros */
+  height: auto;
+  margin: 10px;
+  padding-top: 100px;
+}
+
+.seguradoras-page .logo-porto {
+  max-width: 300px; /* Tamanho da logo da HDI Seguros */
+  height: auto;
+  margin: 10px;
+  padding-top: 100px;
+}
+
+.seguradoras-page .logo-mitsui {
+  max-width: 300px; /* Tamanho da logo da HDI Seguros */
+  height: auto;
+  margin: 10px;
+  padding-top: 100px;
+}
+
+.seguradoras-page .logo-tokio {
+  max-width: 300px; /* Tamanho da logo da HDI Seguros */
+  height: auto;
+  margin: 10px;
+  padding-top: 100px;
+
+}
+
+

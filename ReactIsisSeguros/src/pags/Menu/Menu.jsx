@@ -1,11 +1,13 @@
 import { useEffect } from 'react'
-import './Menu.css'
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 import { Collapse } from 'bootstrap'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import 'bootstrap/dist/js/bootstrap.bundle.min.js'
+import './Menu.css'
 
 function Menu() {
+    const location = useLocation();
+
     useEffect(() => {
         const navbar = document.querySelector('.navbar');
         const logo = document.getElementById('logo');
@@ -57,6 +59,15 @@ function Menu() {
         }
     }, []);
 
+    // Fecha o menu sempre que a rota mudar
+    useEffect(() => {
+        const navbarCollapse = document.querySelector('.navbar-collapse');
+        if (navbarCollapse && navbarCollapse.classList.contains('show')) {
+            const bsCollapse = new Collapse(navbarCollapse, { toggle: false });
+            bsCollapse.hide();
+        }
+    }, [location]); // Executa quando a URL muda
+
     return (
         <nav className="navbar navbar-expand-lg bg-light fixed-top">
             <div className="container">
@@ -80,12 +91,17 @@ function Menu() {
                 </button>
                 <div className="collapse navbar-collapse" id="navbarNav">
                     <ul className="navbar-nav ms-auto">
-                        <li className="nav-item"><a className="nav-link" href="#">Início</a></li>
+                        <li className="nav-item">
+                            <Link className="nav-link" to="/">Início</Link></li>
                         <li className="nav-item"><a className="nav-link" href="https://isisseguros.aggilizador.com.br/" target="_blank" rel="noopener noreferrer">Cotação</a></li>
-                        <li className="nav-item"><a className="nav-link" href="#quemSomos">Quem Somos</a></li>
-                        <li className="nav-item"><a className="nav-link" href="#produtos">Produtos</a></li>
-                        <li className="nav-item"><a className="nav-link" href="#contato">Contato</a></li>
-                        <li className="nav-item"><a className="nav-link" href="#localizacao">Localização</a></li>
+                        <li className="nav-item">
+                            <Link className="nav-link" to="/#quemSomos">Quem Somos</Link></li>
+                        <li className="nav-item">
+                            <Link className="nav-link" to="/#produtos">Produtos</Link></li>
+                        <li className="nav-item">
+                            <Link className="nav-link" to="/#contato">Contato</Link></li>
+                        <li className="nav-item">
+                            <Link className="nav-link" to="/#localizacao">Localização</Link></li>
                         <li className="nav-item">
                             <Link className="nav-link" to="/assistencia" id="btn-assistencia">Assistência 24hs</Link>
                         </li>

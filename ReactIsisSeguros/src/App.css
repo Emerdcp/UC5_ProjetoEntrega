@@ -24,7 +24,7 @@ body {
   /* color: #333; Define a cor do texto para um tom de cinza escuro (#333) */
   line-height: 1.6; /*Aumenta o espaçamento entre as linhas de texto, para uma leitura mais confortável.*/
   /* background-color: #a8a8a8; Define o fundo da página com um tom de cinza muito claro */
-  padding-top: 60px;
+  /* padding-top: 60px; */
 }
 
 .container {
