@@ -1,7 +1,5 @@
 /*================== CARDS LADO A LADO ==================*/
 .cards {   
-    /* display: flex; Define que os cards sejam dispostos em linha */ /*----------------------trava o cards e não deixa em linha--------------------*/
-    /* flex-wrap: wrap; Faz com que os cards "quebrem" para a próxima linha quando não couberem */ /*----------------------trava o cards e não deixa em linha--------------------*/
     gap: 20px; /*Adiciona um espaçamento de 20px entre os cards*/
     justify-content: center; /*Centraliza os cards horizontalmente*/
     margin-top: 20px;
@@ -26,16 +24,9 @@
   .card img {
     width: 100%;
     height: 180px; /* altura padrão para todas as imagens */
-    /* height: auto; */
-    /* display: block; */
     object-fit: cover;
     border-bottom: 1px solid #eee;
   }
-  
-  /* .card h3 {
-    margin: 15px;
-    color: #333;
-  } */
   
   .card h3 .card{
     margin: 15px;
@@ -45,13 +36,10 @@
   }
   
   .card p {
-    /* margin: 0 15px 15px; */
     color: #666;
   }
   
-  
-  
-  .contato-card {
+.contato-card {
     background: #ffffff; /*Define o fundo dos cards como branco*/
     border: 1px solid #ddd; /*Adiciona uma borda cinza clara aos cards*/
     border-radius: 10px; /*Arredonda os cantos do card*/
@@ -63,8 +51,8 @@
     flex-direction: column;
     text-align: left;
   }
+
   /*================== COLOCADO PARA PADRONIZAR O TAMANHO DAS IMAGENS DO CARDS ==================*/
-  
   .card:hover {
     transform: translateY(-5px);
   }

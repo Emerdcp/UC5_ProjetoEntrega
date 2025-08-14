@@ -1,5 +1,4 @@
-/* ====== Seção Produtos / Carrossel ====== */
-
+/*================== SEÇÃO PRODUTOS / CARROSSEL ==================*/
 .secao-cards {
   padding: 40px 20px;/* Espaçamento interno (40px no topo e 20px nas laterais) */
   background-color: #fff;/* Fundo branco */
@@ -18,18 +17,17 @@
   margin-bottom: 20px;/* Espaço abaixo da linha */
 }
 
-/* Área rolável horizontal */
+/*================== ÁREA ROLÁVEL HOZIZONTAL ==================*/
 .cards-scroll {   
   overflow-x: auto; /* Permite rolagem horizontal */
   overflow-y: hidden;/* Desativa a rolagem vertical */
-  /* white-space: nowrap; */ /*----------------------faz diminuir tamanho do card--------------------*/
   scroll-behavior: smooth;/* Rolagem suave */
   padding: 10px 0;/* Espaçamento interno de 10px no topo e embaixo */
-    -ms-overflow-style: none;      /* IE/Edge */
+  -ms-overflow-style: none;      /* IE/Edge */
   scrollbar-width: none;         /* Firefox */
 }
 
-/* Wrapper dos cards em linha */
+/*================== WRAPPER DOS CARDS EM LINHA ==================*/
 .cards {
   display: inline-flex; /* Exibe os cards em linha (como inline-block) mas com propriedades flexíveis */
   gap: 20px;/* Espaçamento de 20px entre os cards */
@@ -37,7 +35,7 @@
   margin-top: 20px;
 }
 
-/* Card */
+/*================== CARD ==================*/
 .card {
   background: #ffffff; /*Define o fundo dos cards como branco*/
   border: 1px solid #ddd; /*Adiciona uma borda cinza clara aos cards*/
@@ -55,7 +53,7 @@
   transform: translateY(-5px); /*Quando o mouse passa sobre o card, ele sobe um pouco (efeito de hover).*/
 }
 
-/* Imagem do card */
+/*================== IMAGEM DO CARD ==================*/
 .card img {
   width: 100%; /* Largura padrão para todas as imagens */
     height: 180px; /* altura padrão para todas as imagens */
@@ -65,21 +63,18 @@
   margin-bottom: 10px;/* Espaço abaixo das imagens */
 }
 
-/* Título e texto do card */
+/*================== TÍTULO E TEXTO DO CARD ==================*/
+.card h3 {
+  margin: 15px;
+  color: #333;
+}
 
+.card p {
+  margin: 0 15px 15px;
+  color: #666;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-/*================== BOTÃO MOVER "SETINHA" APRESENTADO NOS CARDS ==================*/
+/*================== BOTÃO DE NAVEGAÇÕES ==================*/
 .btn-scroll {
   position: absolute; /* Posiciona o botão de forma absoluta dentro do contêiner pai */
   top: 60%; /* Alinha verticalmente ao centro */
@@ -87,7 +82,7 @@
   border: none; /*Coloca Broda no Botão*/
   background-color: transparent; /* <-- Remove o fundo */
   color: #333; /* Cor da seta > */
-  padding: 10px;
+  /* padding: 10px; */
   cursor: pointer; /*Ao Clicar*/
   z-index: 10;
   border-radius: 0; /* <-- Remove o formato arredondado */
@@ -97,6 +92,19 @@
   background: none; /* Remove o fundo padrão do botão */
   cursor: pointer; /* Mostra cursor de clique */
   z-index: 1; /* Garante que o botão fique acima dos outros elementos */
+  
+  background-color: rgba(0, 0, 0, 0.3); /* Fundo preto com transparência */
+  color: #fff; /* Cor da seta */
+  border-radius: 15px; /* Pequeno arredondamento opcional */
+  align-items: center;    /* Centraliza verticalmente */
+  justify-content: center; /* Centraliza horizontalmente */
+  width: 50px;  /* Tamanho do quadrado */
+}
+
+/* Estilizar a seta diretamente */
+.btn-scroll span {
+  font-size: 28px; /* Tamanho da seta */
+  line-height: 1;
 }
 
 .btn-scroll.left {
@@ -137,7 +145,7 @@
   }
 }
 
-/*================== BARRA DE ROLAGEM BOLINHA ... ==================*/
+/*================== BARRA DE ROLAGEM BOLINHA - Dots de paginação ==================*/
 .dots-container {
   text-align: center;
   margin-top: 10px;
@@ -163,16 +171,12 @@
 scrollbar-width: none; /*Barra de relagem, retira*/
 }
 
+/*================== IMAGEM SETA ÍCONE ==================*/
 .seta-btn {
   width: 50px;
   height: 90px;
   object-fit: contain;
 }
-
-
-/*================== CARDS LADO A LADO ==================*/
-
-
 
 /*================== COLOCADO PARA PADRONIZAR O TAMANHO DAS IMAGENS DO CARDS ==================*/
 
@@ -180,25 +184,7 @@ scrollbar-width: none; /*Barra de relagem, retira*/
   transform: translateY(-5px);
 }
 
-
-
-.card h3 {
-  margin: 15px;
-  color: #333;
-}
-
-.card p {
-  margin: 0 15px 15px;
-  color: #666;
-}
-
-/* .card h3 {
-  margin: 15px;
-  color: #333;
-} */
-
 /*================== COLOCADO PARA PADRONIZAR O TAMANHO DAS IMAGENS DO CARDS ==================*/
-
 .card:hover {
   transform: translateY(-5px);
 }
@@ -225,8 +211,6 @@ scrollbar-width: none; /*Barra de relagem, retira*/
   color: #666;
 }
 
-
-
 .contato-card {
   background: #ffffff; /*Define o fundo dos cards como branco*/
   border: 1px solid #ddd; /*Adiciona uma borda cinza clara aos cards*/
@@ -237,62 +221,4 @@ scrollbar-width: none; /*Barra de relagem, retira*/
   display: flex;
   flex-direction: column;
   text-align: left;
-}
-
-
-/*================== COLOCADO PARA PADRONIZAR O TAMANHO DAS IMAGENS DO CARDS ==================*/
-
-.card:hover {
-  transform: translateY(-5px);
-}
-
-.card img {
-  width: 100%;
-  height: 180px; /* altura padrão para todas as imagens */
-  object-fit: cover; /* recorta e centraliza a imagem sem distorcer */
-  border-bottom: 1px solid #eee;
-}
-
-.card h3 {
-  margin: 15px;
-  color: #333;
-}
-
-.card p {
-  margin: 0 15px 15px;
-  color: #666;
-}
-
-
-/*================== TAMANHO DAS IMAGENS TELEFOEN E WHATS==================*/
-#localizacao img {
-  width: 20px; /* ou qualquer tamanho que desejar */
-  height: auto; /* mantém a proporção */
-  margin: 5px 0;
-}
-
-#contato img {
-  width: 20px; /* ou qualquer tamanho que desejar */
-  height: auto; /* mantém a proporção */
-  margin: 5px 0;
-}
-
-#produtos .produtosBotao {
-  width: 20px; /* ou qualquer tamanho que você deseja */
-  height: auto; /* mantém a proporção */
-  margin: 5px 0;
-}
-
-#quemSomos img {
-  width: 20px; /* ou qualquer tamanho que desejar */
-  height: auto; /* mantém a proporção */
-  margin: 5px 0;
-}
-
-/*================== MODAL TAMANHO DAS IMAGENS TELEFOEN E WHATS==================*/
-.telWhats {
-  width: 20px !important;
-  height: auto !important;
-  margin: 5px 0;
-  vertical-align: middle !important;
 }

@@ -1,96 +1,86 @@
 .hero {
-    position: relative;/* Define o posicionamento relativo do elemento, permitindo o posicionamento absoluto de elementos internos dentro dele */
-    background-image: url('/familiaNovo.jpg');/* Define a imagem de fundo do elemento com o caminho fornecido */
-    background-size: cover;/* Faz a imagem de fundo cobrir todo o espaço do elemento, mantendo a proporção e cortando a imagem se necessário */
-    background-position: center;/* Posiciona a imagem de fundo no centro do elemento */
-    background-repeat: no-repeat;/* Impede que a imagem de fundo se repita se o tamanho do elemento for maior que a imagem */
-    /* color: white; Para deixar o texto visível sobre a imagem */
-    /* padding: 100px 0; Ajuste o espaçamento vertical */
-  }
+  position: relative;  /* Define o posicionamento relativo do elemento, permitindo o posicionamento absoluto de elementos internos dentro dele */
+  background-image: url('/familiaNovo.jpg');  /* Define a imagem de fundo do elemento com o caminho fornecido */
+  background-size: cover;  /* Faz a imagem de fundo cobrir todo o espaço do elemento, mantendo a proporção e cortando a imagem se necessário */
+  background-position: center;  /* Posiciona a imagem de fundo no centro do elemento */
+  background-repeat: no-repeat;  /* Impede que a imagem de fundo se repita se o tamanho do elemento for maior que a imagem */
+}
 
-  
-  .hero .overlay {
-    background-color: rgba(0, 0, 0, 0.6); /* Ajuste a opacidade aqui */
-    padding: 100px 0;
-    color: white;
-  }
-  
- 
-  /*================== IMAGEM DA FAMÍLIA CENTRALIZADO ==================*/
+.hero .overlay {
+  background-color: rgba(0, 0, 0, 0.6);  /* Ajuste a opacidade aqui */
+  padding: 100px 0;
+  color: white;
+}
+
+/*================== IMAGEM DA FAMÍLIA CENTRALIZADO ==================*/
 
 img {
-    width: 100%;
-    max-width: 500px; /* Ajuste o tamanho máximo conforme necessário */
-    height: auto;
+  width: 100%;
+  max-width: 500px;  /* Ajuste o tamanho máximo conforme necessário */
+  height: auto;
+}
+
+/*================== RESPONSIVEL ==================*/
+@media (max-width: 990px) {
+  header .container {
+    flex-direction: row;    /* Alinha lado a lado */
+    justify-content: space-between;
+    align-items: center;    /* Centraliza verticalmente */
+    display: flex;
   }
-  
-  /*================== RESPONSIVEL ==================*/
-  @media (max-width: 990px) {
-    header .container {
-      flex-direction: row;/* Alinha lado a lado */
-      justify-content: space-between;
-      align-items: center;/* Centraliza verticalmente */
-      display: flex;
-    }
-  
-    .navbar-brand {
-      display: flex;
-      align-items: center;        /* Garante alinhamento vertical */
-    }
-  
-    .navbar-toggler {
-      margin: 0;
-      position: static;          /*Remove posição relativa*/
-      transform: none;            /*Remove translateY que deslocava*/
-      align-self: center;         /* Centraliza o botão verticalmente */
-    }
-  
-    .hero h2 {
-      font-size: 2em;
-    }
-  
-    .hero p {
-      font-size: 1em;
-    }
-  
-    .cards {
-      /* flex-direction: column; */
-      gap: 10px;
-    }
-  
-    /* .card {
-      width: 100%; faz ficar responsivél, em tamanho de telas menores, mas fica fora de padrão
-    } */
+
+  .navbar-brand {
+    display: flex;
+    align-items: center;    /* Garante alinhamento vertical */
   }
-  
-  @media (max-width: 990px) {
-    .menuPequeno {
-      padding: 0 10px;
-    }
-  
-    .navbar-toggler {
-      margin: 0;
-      position: static;
-      transform: none;
-      align-self: center;
-    }
+
+  .navbar-toggler {
+    margin: 0;
+    position: static;    /*Remove posição relativa*/
+    transform: none;    /*Remove translateY que deslocava*/
+    align-self: center;    /* Centraliza o botão verticalmente */
   }
-  
-  @media (max-width: 480px) {
-    .logo-header {
-      justify-content: center;
-    }
-  
-    .logo {
-      height: 150px; /* Logo menor em telas pequenas */
-    }
-  
-    .hero h2 {
-      font-size: 1.8em;
-    }
-  
-    .hero p {
-      font-size: 0.9em;
-    }
+
+  .hero h2 {
+    font-size: 2em;
   }
-  
+
+  .hero p {
+    font-size: 1em;
+  }
+
+  .cards {    
+    gap: 10px;/* flex-direction: column; */
+  }
+}
+
+@media (max-width: 990px) {
+  .menuPequeno {
+    padding: 0 10px;
+  }
+
+  .navbar-toggler {
+    margin: 0;
+    position: static;
+    transform: none;
+    align-self: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo-header {
+    justify-content: center;
+  }
+
+  .logo {
+    height: 150px;/* Logo menor em telas pequenas */
+  }
+
+  .hero h2 {
+    font-size: 1.8em;
+  }
+
+  .hero p {
+    font-size: 0.9em;
+  }
+}

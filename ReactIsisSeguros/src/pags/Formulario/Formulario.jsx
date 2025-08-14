@@ -1,15 +1,63 @@
-import './Formulario.css';
-import '../../../src/App.css';
+import React, { useRef, useState } from "react";
+import emailjs from "@emailjs/browser";
 
-function Formulario() {
-    const handleSubmit = (event) => {
-        event.preventDefault(); // evita o reload da página
-        console.log("Form enviado!");
-        // Aqui você pode capturar os valores e enviar via fetch/axios para seu backend
+export default function FormCotacao() {
+    const form = useRef();
+
+    const [telefone, setTelefone] = useState("");
+    const [email, setEmail] = useState("");
+    const [emailValido, setEmailValido] = useState(true);
+
+    // Máscara de telefone
+    const handleTelefoneChange = (e) => {
+        let valor = e.target.value.replace(/\D/g, ""); // remove não números
+        if (valor.length > 10) {
+            valor = valor.replace(/(\d{2})(\d{5})(\d{4}).*/, "($1)$2-$3");
+        } else {
+            valor = valor.replace(/(\d{2})(\d{4,5})(\d{0,4}).*/, "($1)$2-$3");
+        }
+        setTelefone(valor);
+    };
+
+    // Validação de e-mail
+    const handleEmailChange = (e) => {
+        const valor = e.target.value;
+        setEmail(valor);
+        const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        setEmailValido(regex.test(valor));
+    };
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+        if (!emailValido) {
+            alert("Por favor, insira um e-mail válido!");
+            return;
+        }
+
+        emailjs.sendForm(
+            "service_n5m1ssc", // substitua
+            "template_k96vv5r", // substitua
+            form.current,
+            "LWzKdJb2Xgp-bAvNa" // substitua
+        )
+            .then(() => {
+                alert("Mensagem enviada com sucesso! ✅");
+                form.current.reset();
+                setTelefone("");
+                setEmail("");
+            })
+            .catch((error) => {
+                console.error("Erro:", error);
+                alert("Ocorreu um erro ao enviar a mensagem ❌");
+            });
     };
 
     const limparFormulario = () => {
-        document.getElementById("form-proposta").reset();
+        form.current.reset();
+        setTelefone("");
+        setEmail("");
+        setEmailValido(true);
     };
 
     return (
@@ -19,31 +67,51 @@ function Formulario() {
                     <div className="linha-topo">
                         <h2 className="titulo-centralizado"><b>Entre em Contato</b></h2>
                     </div>
-                    <form className="container mb-4" id="form-proposta" action="enviar-email.php" method="POST">
+                    <form ref={form} onSubmit={sendEmail} className="container mb-4">
                         <div className="row g-3">
-                            <div className="col-md-4">
-                                <label htmlFor="nome" className="form-label">Nome</label>
-                                <input type="text" className="form-control" id="nome" name="nome" placeholder="Seu nome" required />
-                                <small className="form-text text-muted"></small>
+                            <div className="col-md-3">
+                                <label className="form-label">Nome:</label>
+                                <input type="text" name="name" placeholder="Seu nome" required />
                             </div>
-                            <div className="col-md-4">
-                                <label htmlFor="telefone" className="form-label">Telefone</label>
-                                <input type="tel" className="form-control" id="telefone" name="telefone" placeholder="(99)99999-9999"
-                                    required /> 
+                            <div className="col-md-3">
+                                <label className="form-label">Título:</label>
+                                <input type="text" name="title" placeholder="Título" required />
                             </div>
-                            <div className="col-md-4">
-                                <label htmlFor="email" className="form-label">Email</label>
-                                <input type="email" className="form-control" id="email" name="email" placeholder="exemplo@dominio.com"
-                                    required />
+                            <div className="col-md-3">
+                                <label className="form-label">Telefone:</label>
+                                <input
+                                    type="text"
+                                    name="telefone"
+                                    value={telefone}
+                                    onChange={handleTelefoneChange}
+                                    placeholder="(00)00000-0000"
+                                    required
+                                    maxLength="15"
+                                    className="form-control"
+                                />
                             </div>
-                            <div className="col-12">
-                                <label htmlFor="mensagem" className="form-label">Mensagem</label>
-                                <textarea className="form-control" id="mensagem" name="mensagem" placeholder="Sua mensagem" rows="4"
-                                    required></textarea>
+                            <div className="col-md-3">
+                                <label className="form-label">E-mail:</label>
+                                <input
+                                    type="email"
+                                    name="email"
+                                    value={email}
+                                    onChange={handleEmailChange}
+                                    placeholder="seuemail@email.com"
+                                    required
+                                    className={`form-control ${!emailValido ? "is-invalid" : ""}`}
+                                />
+                                {!emailValido && (
+                                    <div className="invalid-feedback">Digite um e-mail válido</div>
+                                )}
+                            </div>
+                            <div className="col-md-12">
+                                <label className="form-label">Mensagem:</label>
+                                <textarea name="mensagem" placeholder="Digite sua mensagem" required></textarea>
                             </div>
                             <div className="col-12 text-end">
                                 <button type="submit">Enviar</button>
-                                <button type="button" className=" botao ms-2" onClick={limparFormulario}>Cancelar</button>
+                                <button type="button" className="botao ms-2" onClick={limparFormulario}>Cancelar</button>
                             </div>
                         </div>
                     </form>
@@ -52,5 +120,3 @@ function Formulario() {
         </section>
     );
 }
-
-export default Formulario

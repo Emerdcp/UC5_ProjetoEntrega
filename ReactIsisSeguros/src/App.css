@@ -5,11 +5,6 @@
   box-sizing: border-box; /*Faz com que o tamanho de um elemento (largura/altura) inclua bordas e preenchimentos. Isso facilita o controle do tamanho dos elementos*/
 }
 
-/*================== COLOCAR PARAFRAGO 1CM PARA OS PARAGRAFOS DO SITE ==================*/
-/* p {
-  text-indent: 1cm; /* Define o recuo de 1 cm na primeira linha 
-} */
-
 /*================== CENTRALIZAÇÃO E JUSTICATIVA DE TEXTO (P)ARAGRAFO ==================*/
 p {
   text-align: justify;  /* Centraliza o conteúdo inline (como texto, imagens e links) dentro de um elemento */
@@ -21,10 +16,7 @@ p {
 
 body {
   font-family: 'Segoe UI', sans-serif; /*Define a fonte principal da página (se o Segoe UI não estiver disponível, o navegador usará uma fonte sans-serif genérica*/
-  /* color: #333; Define a cor do texto para um tom de cinza escuro (#333) */
   line-height: 1.6; /*Aumenta o espaçamento entre as linhas de texto, para uma leitura mais confortável.*/
-  /* background-color: #a8a8a8; Define o fundo da página com um tom de cinza muito claro */
-  /* padding-top: 60px; */
 }
 
 .container {
@@ -35,8 +27,6 @@ body {
 
 header {
   background: #ffffff; /* Define a cor de fundo do cabeçalho como um tom de cinza - Amarelo vivo */
-  /* color: #333; Define a cor do texto dentro do cabeçalho */
-  /* padding: 2px 0; Adiciona 20px de espaço acima e abaixo do conteúdo do cabeçalho */
 }
 
 header .container {
@@ -50,7 +40,6 @@ header .container {
   text-align: center; /*Centraliza o texto dentro dessa seção*/
   padding: 60px 20px; /*Adiciona 60px de espaço superior e inferior e 20px nas laterais*/
 }
-
 
  /*================== PARAMETRO PARA FONTE E TAMANHO ==================*/
  .hero h2 {
@@ -129,3 +118,69 @@ form button:hover {
   background-color: #ffb300; /* Cor de fundo amarela mais intensa ao passar o mouse */
 }
 
+/*================== TAMANHO DAS IMAGENS TELEFOEN E WHATS --- USANDO EM CONTATO E FORMULARIO ==================*/
+#localizacao img {
+  width: 20px; /* ou qualquer tamanho que desejar */
+  height: auto; /* mantém a proporção */
+  margin: 5px 0;
+}
+
+#contato img {
+  width: 20px; /* ou qualquer tamanho que desejar */
+  height: auto; /* mantém a proporção */
+  margin: 5px 0;
+}
+
+#produtos .produtosBotao {
+  width: 20px; /* ou qualquer tamanho que você deseja */
+  height: auto; /* mantém a proporção */
+  margin: 5px 0;
+}
+
+#quemSomos img {
+  width: 20px; /* ou qualquer tamanho que desejar */
+  height: auto; /* mantém a proporção */
+  margin: 5px 0;
+}
+
+/*================== MODAL TAMANHO DAS IMAGENS TELEFOEN E WHATS==================*/
+.telWhats {
+  width: 20px !important;
+  height: auto !important;
+  margin: 5px 0;
+  vertical-align: middle !important;
+}
+
+/*================== ATENDIMENTO POR WHATSAPP - PRECISANDO DE AJUDA ==================*/
+.whatsapp-popup {
+  position: fixed; /* Fixa o elemento na tela, independentemente do scroll */
+  bottom: 20px; /* Posiciona o elemento a 20px da parte inferior da tela */
+  right: 20px; /* Posiciona o elemento a 20px da borda direita da tela */
+  padding: 50px 0px; /* Espaçamento interno: 50px em cima e embaixo, 0 nas laterais */
+  border-radius: 50px; /* Arredonda as bordas, deixando o elemento oval ou circular */
+  align-items: center; /* Alinha o conteúdo verticalmente ao centro */
+  text-decoration: none; /* Remove sublinhado de links (se for uma tag <a>) */
+  font-family: sans-serif; /* Define uma fonte sem serifa para o texto */
+  z-index: 999;/* Garante que o elemento fique acima da maioria dos outros elementos */
+  transition: transform 0.3s ease; /* Adiciona uma animação suave para transformações, como hover */
+}
+
+.whatsapp-popup:hover {
+  transform: scale(1.05); /* Aumenta ligeiramente o tamanho do elemento (efeito de zoom) */
+}
+
+.whatsapp-popup img {
+  width: 50px; /* Define a largura do elemento em 50 pixels */
+  height: 50px; /* Define a altura do elemento em 50 pixels */
+  margin-right: 8px; /* Adiciona um espaço de 8 pixels à direita do elemento */
+}
+
+@keyframes pulse { /*Movimentação do Whatsapp*/
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+
+.whatsapp-popup {
+  animation: pulse 2s infinite;
+}

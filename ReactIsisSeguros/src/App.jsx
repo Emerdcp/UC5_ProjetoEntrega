@@ -12,6 +12,7 @@ import Hdi from './pags/Assistencia/Seguradoras/Hdi';
 import Porto from './pags/Assistencia/Seguradoras/Porto';
 import Mitsui from './pags/Assistencia/Seguradoras/Mitsui';
 import Tokio from './pags/Assistencia/Seguradoras/Tokio';
+import Suhai from './pags/Assistencia/Seguradoras/Suhai';
 
 // Função que observa mudanças na URL e rola para o elemento com o ID correspondente
 function ScrollToHashElement() {
@@ -47,6 +48,7 @@ function App() {
           <Route path='assistencia/seguradoras/porto' element={<Porto />} />
           <Route path='assistencia/seguradoras/mitsui' element={<Mitsui />} />
           <Route path='assistencia/seguradoras/tokio' element={<Tokio />} />
+          <Route path='assistencia/seguradoras/suhai' element={<Suhai />} />
         </Route>
       </Routes>
     </BrowserRouter>

@@ -1,3 +1,12 @@
+Site para criação de domínio de servidor de envio de mail
+
+https://www.emailjs.com/
+usuário: Emersoncavalho@hotmail.com.br
+senha: 
+
+
+
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.

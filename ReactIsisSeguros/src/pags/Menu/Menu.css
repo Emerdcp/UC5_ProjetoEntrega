@@ -56,7 +56,6 @@
   transition: all 0.3s ease;
 }
 
-
 /*Usado no conteiner do menu para reduzir o tamanho*/
 .menuPequeno {
   display: flex;
@@ -107,72 +106,39 @@
 }
 
 .navbar-toggler {
-  /* margin-left: auto; Empurra o botão para a direita */
-  /* align-self: center; Garante alinhamento vertical no flex container */
-  transform: translateY(-50%);
-  /* Move o elemento para cima 50% da sua própria altura (centralização vertical) */
-  top: 50%;
-  /* Posiciona o topo do elemento a 50% da altura do pai */
-  position: relative;
-  /* Permite o uso de propriedades como `top`, mas respeita o fluxo normal do documento */
-
-  transition: all 0.3s ease;
-  /* Suaviza todas as mudanças de estilo em 0.3s */
-  border: none;
-  /* Remove qualquer borda padrão */
-  background-color: transparent;
-  /* Torna o fundo transparente */
-  padding: 6px;
-  /* Espaçamento interno de 6px */
-  border-radius: 4px;
-  /* Arredonda levemente os cantos */
-  box-shadow: none !important;
-  /* Remove qualquer sombra, com prioridade */
-  outline: none !important;
-  /* Remove o contorno ao focar, com prioridade */
-  margin-left: auto;
-  /* Empurra o botão para a direita dentro de um flex container */
+  transform: translateY(-50%); /* Move o elemento para cima 50% da sua própria altura (centralização vertical) */
+  top: 50%;  /* Posiciona o topo do elemento a 50% da altura do pai */
+  position: relative;  /* Permite o uso de propriedades como `top`, mas respeita o fluxo normal do documento */
+  transition: all 0.3s ease;  /* Suaviza todas as mudanças de estilo em 0.3s */
+  border: none;  /* Remove qualquer borda padrão */
+  background-color: transparent;  /* Torna o fundo transparente */
+  padding: 6px;  /* Espaçamento interno de 6px */
+  border-radius: 4px;  /* Arredonda levemente os cantos */
+  box-shadow: none !important;  /* Remove qualquer sombra, com prioridade */
+  outline: none !important;  /* Remove o contorno ao focar, com prioridade */
+  margin-left: auto;  /* Empurra o botão para a direita dentro de um flex container */
 }
 
 /* Remove borda ao clicar */
 .navbar-toggler:focus,
 .navbar-toggler:active {
-  outline: none !important;
-  /* Remove contorno ao focar ou ativar */
-  box-shadow: none !important;
-  /* Remove qualquer sombra ao focar ou ativar */
+  outline: none !important;  /* Remove contorno ao focar ou ativar */
+  box-shadow: none !important;  /* Remove qualquer sombra ao focar ou ativar */
 }
 
 /* Aplica efeito de borda ao passar o mouse */
 .navbar-toggler:hover {
-  border: 2px solid #ffb300;
-  /* Borda dourada ao passar o mouse */
-  border-radius: 6px;
-  /* Cantos mais arredondados no hover */
-  background-color: rgba(255, 179, 0, 0.15);
-  /* Fundo amarelo-claro translúcido no hover */
-  cursor: pointer;
-  /* Mostra o cursor de clique */
+  border: 2px solid #ffb300;  /* Borda dourada ao passar o mouse */
+  border-radius: 6px;  /* Cantos mais arredondados no hover */
+  background-color: rgba(255, 179, 0, 0.15);  /* Fundo amarelo-claro translúcido no hover */
+  cursor: pointer;  /* Mostra o cursor de clique */
 }
 
 .navbar-toggler-icon {
-  height: 24px;
-  /* Altura do ícone */
-  width: 24px;
-  /* Largura do ícone */
-  display: flex;
-  /* Usa Flexbox para centralização */
-  align-items: center;
-  /* Alinha o conteúdo verticalmente ao centro */
-  justify-content: center;
-  /* Alinha o conteúdo horizontalmente ao centro */
-  background-size: 100% 100%;
-  /* Garante que o ícone se encaixe bem */
+  height: 24px;  /* Altura do ícone */
+  width: 24px;  /* Largura do ícone */
+  display: flex;  /* Usa Flexbox para centralização */
+  align-items: center;  /* Alinha o conteúdo verticalmente ao centro */
+  justify-content: center;  /* Alinha o conteúdo horizontalmente ao centro */
+  background-size: 100% 100%;  /* Garante que o ícone se encaixe bem */
 }
-
-
-
-
-
-
-

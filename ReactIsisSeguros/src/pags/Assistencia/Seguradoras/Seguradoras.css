@@ -79,7 +79,13 @@
   height: auto;
   margin: 10px;
   padding-top: 100px;
+}
 
+.seguradoras-page .logo-suhai {
+  max-width: 300px; /* Tamanho da logo da HDI Seguros */
+  height: auto;
+  margin: 10px;
+  padding-top: 100px;
 }
 
 

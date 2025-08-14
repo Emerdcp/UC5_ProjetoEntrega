@@ -88,7 +88,7 @@ function Assistencia() {
                         </div>
                         <div className="card">
                             <Link
-                                to="/assistencia/seguradoras/Tokio"
+                                to="/assistencia/seguradoras/suhai"
                                 style={{
                                     textDecoration: 'none',
                                     color: 'inherit',
@@ -97,7 +97,7 @@ function Assistencia() {
                                     alignItems: 'center'
                                 }}
                             >
-                                <img src="/seguradoras/tokio.jpg" alt="Tokio" />
+                                <img src="/seguradoras/suhai.jpg" alt="Tokio" />
                                 <h4>Clique aqui</h4>
                             </Link>
                         </div>

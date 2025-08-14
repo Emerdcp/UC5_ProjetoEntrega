@@ -10,15 +10,13 @@
     flex-direction: column;
     text-align: left;
     margin: 20px 0;    /* adiciona margem superior e inferior */
-    /* transform: translateY(-5px) scale(1.02); */
-    /* max-width: 900px; Limita a largura máxima para melhor alinhamento */
     margin: 40px auto; /* Centraliza horizontalmente e adiciona margem superior e inferior */
     padding: 20px; /* Espaçamento interno */
     box-shadow: 10px 10px 10px #000000; /* aumenta a sombra para dar efeito de elevação */
     
 }
 
-/* Efeito ao passar o mouse */
+/*================== EFEITO AO PASSAR O MOUSE ==================*/
 .contato-card:hover {
     transform: translateY(-5px);    /* move o card para cima */
    
