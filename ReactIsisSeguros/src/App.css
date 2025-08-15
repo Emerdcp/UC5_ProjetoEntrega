@@ -16,7 +16,7 @@ p {
 
 body {
   font-family: 'Segoe UI', sans-serif; /*Define a fonte principal da página (se o Segoe UI não estiver disponível, o navegador usará uma fonte sans-serif genérica*/
-  line-height: 1.6; /*Aumenta o espaçamento entre as linhas de texto, para uma leitura mais confortável.*/
+  /* line-height: 1.6; Aumenta o espaçamento entre as linhas de texto, para uma leitura mais confortável. */
 }
 
 .container {
@@ -116,6 +116,7 @@ form button {
 
 form button:hover {
   background-color: #ffb300; /* Cor de fundo amarela mais intensa ao passar o mouse */
+  color: #ffffff; /*Texto preto*/
 }
 
 /*================== TAMANHO DAS IMAGENS TELEFOEN E WHATS --- USANDO EM CONTATO E FORMULARIO ==================*/

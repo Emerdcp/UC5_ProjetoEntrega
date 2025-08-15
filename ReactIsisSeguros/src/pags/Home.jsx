@@ -4,6 +4,7 @@ import QuemSomos from './QuemSomos/QuemSomos'
 import Produtos from './Produtos/Produtos'
 import Formulario from './Formulario/Formulario'
 import Localizacao from './Localizacao/Localizacao'
+import AccessibilityBar from './Acessibilidade/AccessibilityBar'
 
 function Home() {
   return (
@@ -23,6 +24,8 @@ function Home() {
       <Produtos />
       <Formulario />
       <Localizacao />
+
+      <AccessibilityBar/>
     </>
   )
 }
