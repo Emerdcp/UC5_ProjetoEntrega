@@ -22,7 +22,7 @@
   overflow-x: auto; /* Permite rolagem horizontal */
   overflow-y: hidden;/* Desativa a rolagem vertical */
   scroll-behavior: smooth;/* Rolagem suave */
-  padding: 10px 0;/* Espaçamento interno de 10px no topo e embaixo */
+  padding: 25px 0;/* Espaçamento interno de 10px no topo e embaixo */
   -ms-overflow-style: none;      /* IE/Edge */
   scrollbar-width: none;         /* Firefox */
 }

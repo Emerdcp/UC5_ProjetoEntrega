@@ -70,15 +70,15 @@ export default function FormCotacao() {
                     <form ref={form} onSubmit={sendEmail} className="container mb-4">
                         <div className="row g-3">
                             <div className="col-md-3">
-                                <label className="form-label">Nome:</label>
-                                <input type="text" name="name" placeholder="Seu nome" required />
+                                <label>Nome:</label>
+                                <input type="text" name="name" placeholder="Seu nome" className="form-control" required />
                             </div>
                             <div className="col-md-3">
-                                <label className="form-label">Título:</label>
-                                <input type="text" name="title" placeholder="Título" required />
+                                <label>Título:</label>
+                                <input type="text" name="title" placeholder="Título" className="form-control" required />
                             </div>
                             <div className="col-md-3">
-                                <label className="form-label">Telefone:</label>
+                                <label>Telefone:</label>
                                 <input
                                     type="text"
                                     name="telefone"
@@ -91,7 +91,7 @@ export default function FormCotacao() {
                                 />
                             </div>
                             <div className="col-md-3">
-                                <label className="form-label">E-mail:</label>
+                                <label>E-mail:</label>
                                 <input
                                     type="email"
                                     name="email"
@@ -106,7 +106,7 @@ export default function FormCotacao() {
                                 )}
                             </div>
                             <div className="col-md-12">
-                                <label className="form-label">Mensagem:</label>
+                                <label>Mensagem:</label>
                                 <textarea name="mensagem" placeholder="Digite sua mensagem" required></textarea>
                             </div>
                             <div className="col-12 text-end">
