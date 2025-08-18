@@ -1,0 +1,9 @@
+/* styles/global.css ou seu arquivo de estilo */
+.telefone-link {
+  color: #000;           /* preto */
+  text-decoration: none; /* remove sublinhado */
+}
+
+.telefone-link:hover {
+  text-decoration: underline; /* adiciona sublinhado no hover (opcional) */
+}

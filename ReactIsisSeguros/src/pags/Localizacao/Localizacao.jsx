@@ -19,12 +19,24 @@ function Localizacao() {
                                 <p><b>CEP:</b> 83.045-725</p>
 
                                 <p>
-                                    <img src="/telefone.png" alt="Telefone" style={{ width: '20px', verticalAlign: 'middle', marginRight: '5px' }} />
-                                    (41) 3045-1700
+                                    <a href="tel:+554130451700" className="telefone-link" style={{ textDecoration: 'none', color: 'inherit' }}>
+                                        <img
+                                            src="/telefone.png"
+                                            alt="Telefone"
+                                            style={{ width: '20px', verticalAlign: 'middle', marginRight: '5px' }}
+                                        />
+                                        (41) 3045-1700
+                                    </a>
                                 </p>
                                 <p>
-                                    <img src="/telefone.png" alt="Telefone" style={{ width: '20px', verticalAlign: 'middle', marginRight: '5px' }} />
-                                    (41) 99195-1640
+                                    <a href="tel:+5541991951640" style={{ textDecoration: 'none', color: 'inherit' }}>
+                                        <img
+                                            src="/telefone.png"
+                                            alt="Telefone"
+                                            style={{ width: '20px', verticalAlign: 'middle', marginRight: '5px' }}
+                                        />
+                                        (41) 99195-1640
+                                    </a>
                                 </p>
                                 <p>
                                     <a href="https://wa.me/554130451700"
