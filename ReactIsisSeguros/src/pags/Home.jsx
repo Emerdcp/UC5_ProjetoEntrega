@@ -25,7 +25,7 @@ function Home() {
       <Formulario />
       <Localizacao />
 
-      <AccessibilityBar/>
+
     </>
   )
 }
